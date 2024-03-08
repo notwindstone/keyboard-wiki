@@ -1,12 +1,13 @@
 import {createLazyFileRoute, Link} from "@tanstack/react-router";
 import Section from "../../components/Section.tsx";
 import {intro, kits, keycaps, switches, stabilizers} from '../../config/section.json'
+import {Button} from "@mantine/core";
 
 const Guide = () => {
     return (
         <main className="main">
             <div className="main__body">
-                <Link to="/">Вернуться</Link>
+                <Button component={Link} to="/">Вернуться</Button>
                 <Section title={intro.title}
                          description={intro.description}
                          imageURL={intro.imageURL}
@@ -38,13 +39,6 @@ const Guide = () => {
                          pageURL={stabilizers.pageURL}
                 />
             </div>
-            <h1>Гайд</h1>
-            <Link className="test" to='/guide/intro'>Intro</Link>
-            <Link className="test" to='/guide/kits'>Kits</Link>
-            <Link className="test" to='/guide/keycaps'>Keycaps</Link>
-            <Link className="test" to='/guide/switches'>Switches</Link>
-            <Link className="test" to='/guide/stabilizers'>Stabilizers</Link>
-
         </main>
     )
 }
