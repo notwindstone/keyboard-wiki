@@ -6,7 +6,8 @@
     height: 4rem;
     width: 100%;
     position: fixed;
-    background: var(--mantine-color-default);
+    background: var(--mantine-color-body);
+    border-bottom: 1px solid var(--mantine-color-default-border);
 }
     .header__body {
         width: calc(100% - 2rem);

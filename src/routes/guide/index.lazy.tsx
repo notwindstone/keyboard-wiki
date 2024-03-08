@@ -7,7 +7,7 @@ const Guide = () => {
     return (
         <main className="main">
             <div className="main__body">
-                <Button component={Link} to="/">Вернуться</Button>
+                    <Button className="main__return-button" component={Link} to="/" variant="default">Вернуться</Button>
                 {
                     sections.map(({ title, description, imageURL, imageAlt, pageURL }) => {
                         return (

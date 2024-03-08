@@ -7,10 +7,11 @@ const Section = (props: { title: string; description: string; imageURL: string; 
     return (
         <Flex
             className="main__section"
-            justify="space-between"
+            justify="center"
             align="center"
             direction="row"
-            wrap="wrap"
+            wrap="nowrap"
+            gap="1rem"
         >
             <div className="main__block">
                 <img className="main__image"
@@ -19,9 +20,9 @@ const Section = (props: { title: string; description: string; imageURL: string; 
                 />
             </div>
             <div className="main__block">
-                <h1>{title}</h1>
-                <p>{description}</p>
-                <Button component={Link} to={pageURL}>Перейти</Button>
+                <h1 className="main__title">{title}</h1>
+                <p className="main__description">{description}</p>
+                <Button className="main__button" component={Link} to={pageURL}>Перейти</Button>
             </div>
         </Flex>
     );

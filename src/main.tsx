@@ -11,7 +11,7 @@ import './styles/Resources.css'
 const theme = createTheme({
     /** Put your mantine theme override here */
     fontFamily: 'Montserrat, sans-serif',
-    defaultRadius: 'sm',
+    defaultRadius: 'sm'
 });
 
 const router = createRouter({ routeTree })
