@@ -1,0 +1,18 @@
+.header {
+    z-index: 10;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    background: var(--mantine-color-default);
+}
+    .header__body {
+        width: calc(100% - 2rem);
+        max-width: 120rem;
+        margin: auto;
+    }
+    .header__title {
+        margin: 0;
+    }

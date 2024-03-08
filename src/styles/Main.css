@@ -1,0 +1,14 @@
+.main {
+    padding-top: 4rem;
+}
+    .main__body {
+        width: calc(75% - 2rem);
+        max-width: 90rem;
+        margin: auto;
+    }
+    .main__image {
+        width: 100%;
+    }
+    .main__block {
+        flex: 1;
+    }
