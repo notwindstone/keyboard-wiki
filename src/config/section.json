@@ -1,37 +1,37 @@
-{
-  "intro": {
+[
+  {
     "title": "Введение",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "imageURL": "https://d2dqts71r73516.cloudfront.net/1658189887894_resized-red-1.jpeg",
     "imageAlt": "Owlab Voice65 keyboard image",
     "pageURL": "/guide/intro"
   },
-  "kits": {
+  {
     "title": "Базы",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "imageURL": "https://thekey.company/cdn/shop/products/M1Website-4_1024x1024.jpg?v=1681395260",
     "imageAlt": "Monsgeek M1 Barebone kit image",
     "pageURL": "/guide/kits"
   },
-  "keycaps": {
+  {
     "title": "Кейкапы",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
     "imageAlt": "ePBT Black White keycaps image",
     "pageURL": "/guide/keycaps"
   },
-  "switches": {
+  {
     "title": "Свитчи",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "imageURL": "https://cdn.shopify.com/s/files/1/1679/2319/files/DSC08448_1024x1024.jpg?v=1597791918",
     "imageAlt": "C3Equalz Kiwi switches image",
     "pageURL": "/guide/switches"
   },
-  "stabilizers": {
+  {
     "title": "Стабилизаторы",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "imageURL": "https://cdn.shopify.com/s/files/1/0631/9590/6271/files/1_09918b67-f33d-425e-91b4-3bba7eff5837.jpg?v=1652162413",
     "imageAlt": "Some random keyboard stabilizers image",
     "pageURL": "/guide/stabilizers"
   }
-}
+]
