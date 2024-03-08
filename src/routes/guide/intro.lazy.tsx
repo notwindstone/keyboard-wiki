@@ -1,4 +1,5 @@
 import {createLazyFileRoute, Link} from "@tanstack/react-router";
+import Sidebar from "../../layout/Sidebar.tsx";
 
 export const Route = createLazyFileRoute('/guide/intro')({
     component: Intro,
@@ -6,9 +7,9 @@ export const Route = createLazyFileRoute('/guide/intro')({
 
 function Intro() {
     return (
-        <div>
-            <h1>Гайд</h1>
+        <main className="main">
+            <Sidebar />
             <Link to='/guide/'>Вернуться</Link>
-        </div>
+        </main>
     )
 }

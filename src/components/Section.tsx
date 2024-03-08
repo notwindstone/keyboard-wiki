@@ -1,8 +1,12 @@
 import {Button, Flex} from "@mantine/core";
 import {Link} from "@tanstack/react-router";
+import {useDisclosure} from "@mantine/hooks";
+
 
 const Section = (props: { title: string; description: string; imageURL: string; imageAlt: string; pageURL: string; }) => {
     const { title, description, imageURL, imageAlt, pageURL } = props
+
+    const [loading, { toggle }] = useDisclosure()
 
     return (
         <Flex
@@ -22,7 +26,7 @@ const Section = (props: { title: string; description: string; imageURL: string; 
             <div className="main__block">
                 <h1 className="main__title">{title}</h1>
                 <p className="main__description">{description}</p>
-                <Button className="main__button" component={Link} to={pageURL}>Перейти</Button>
+                <Button className="main__button" component={Link} to={pageURL} onClick={toggle} loading={loading} loaderProps={{ type: 'dots' }}>Перейти</Button>
             </div>
         </Flex>
     );
