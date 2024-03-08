@@ -1,0 +1,37 @@
+{
+  "intro": {
+    "title": "Введение",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "imageURL": "https://meletrix.com/cdn/shop/files/Zoom75_SEWhite_eWhite_1024x1024.jpg?v=1701947290",
+    "imageAlt": "Meletrix Zoom75 image",
+    "pageURL": "/guide/intro"
+  },
+  "kits": {
+    "title": "Базы",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "imageURL": "",
+    "imageAlt": "",
+    "pageURL": "/guide/kits"
+  },
+  "keycaps": {
+    "title": "Кейкапы",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "imageURL": "",
+    "imageAlt": "",
+    "pageURL": "/guide/keycaps"
+  },
+  "switches": {
+    "title": "Свитчи",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "imageURL": "",
+    "imageAlt": "",
+    "pageURL": "/guide/switches"
+  },
+  "stabilizers": {
+    "title": "Стабилизаторы",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "imageURL": "",
+    "imageAlt": "",
+    "pageURL": "/guide/stabilizers"
+  }
+}
