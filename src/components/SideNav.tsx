@@ -1,12 +1,9 @@
 import {Button} from "@mantine/core";
-import {Link, useRouterState} from "@tanstack/react-router";
+import {Link} from "@tanstack/react-router";
 
-const SideNav = () => {
-    const currentRoute = useRouterState().location.pathname + "#anatomy"
-
-    return (
+const SideNav = () => {return (
         <div className="sidebar__body">
-            <Button component={Link} to={currentRoute}>123</Button>
+            <Button>1234</Button>
         </div>
     )
 }

@@ -2,3 +2,6 @@
     text-decoration: none;
     color: inherit;
 }
+    .link:hover {
+        color: var(--mantine-color-blue-light-color)
+    }

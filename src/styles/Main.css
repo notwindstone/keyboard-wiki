@@ -9,6 +9,11 @@
         flex-direction: column;
         gap: 2rem;
     }
+        .main__body--guide-item {
+            max-width: 120rem;
+        }
+    .main__article {
+    }
     .main__return-button {
         margin-top: 2rem;
     }

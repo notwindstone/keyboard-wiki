@@ -1,0 +1,13 @@
+.sidebar {
+    width: 16rem;
+    border-right: 1px solid var(--mantine-color-default-border);
+}
+    .sidebar__body {
+        width: 13rem;
+        position: fixed;
+        display: flex;
+        overflow-y: scroll;
+        height: calc(100% - 13rem);
+        flex-direction: column;
+        padding: 1rem 0 0 0;
+    }
