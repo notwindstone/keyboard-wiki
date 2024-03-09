@@ -1,4 +1,9 @@
-const Content = () => {
+import pageLinks from '../config/pageLinks.json'
+
+const Content = (props) => {
+    const { page } = props
+    const pageURL = pageLinks[page]
+
     return (
         <article className="main__article">
             {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}

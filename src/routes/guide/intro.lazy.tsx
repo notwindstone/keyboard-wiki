@@ -18,7 +18,7 @@ function Intro() {
                     justify='flex-start'
                 >
                     <Sidebar />
-                    <Content />
+                    <Content page="intro" />
                 </Flex>
             </div>
         </main>
