@@ -1,0 +1,1 @@
+import{c as s,j as e,L as o}from"./index-BJwgCUlg.js";const n=s("/resources")({component:r});function r(){return e.jsxs("div",{children:[e.jsx("h1",{children:"Ресурсы"}),e.jsx(o,{to:"/",children:"Вернуться"})]})}export{n as Route};

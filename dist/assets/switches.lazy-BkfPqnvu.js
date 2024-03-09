@@ -1,0 +1,1 @@
+import{c as s,j as e,F as i}from"./index-BJwgCUlg.js";import{S as t,C as a}from"./Content-DvSPLY8r.js";const c=s("/guide/switches")({component:n});function n(){return e.jsx("main",{className:"main",children:e.jsx("div",{className:"main__body main__body--guide-item",children:e.jsxs(i,{justify:"flex-start",children:[e.jsx(t,{}),e.jsx(a,{page:"switches"})]})})})}export{c as Route};
