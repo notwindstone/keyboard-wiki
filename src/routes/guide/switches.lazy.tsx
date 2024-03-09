@@ -1,7 +1,10 @@
-import {createLazyFileRoute, Link} from '@tanstack/react-router'
+import {createFileRoute, Link} from '@tanstack/react-router'
 
-export const Route = createLazyFileRoute('/guide/switches')({
-  component: Switches
+export const Route = createFileRoute('/guide/switches')({
+  component: Switches,
+    staticData: {
+        titleRU: "Переключатели"
+    }
 })
 
 function Switches() {

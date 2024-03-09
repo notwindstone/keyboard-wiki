@@ -1,7 +1,10 @@
-import {createLazyFileRoute, Link} from '@tanstack/react-router'
+import {createFileRoute, Link} from '@tanstack/react-router'
 
-export const Route = createLazyFileRoute('/guide/keycaps')({
-  component: Keycaps
+export const Route = createFileRoute('/guide/keycaps')({
+  component: Keycaps,
+    staticData: {
+        titleRU: "Кейкапы"
+    }
 })
 
 function Keycaps() {

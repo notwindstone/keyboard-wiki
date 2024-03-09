@@ -1,7 +1,10 @@
-import {createLazyFileRoute, Link} from '@tanstack/react-router'
+import {createFileRoute, Link} from '@tanstack/react-router'
 
-export const Route = createLazyFileRoute('/guide/kits')({
-  component: Kits
+export const Route = createFileRoute('/guide/kits')({
+  component: Kits,
+    staticData: {
+        titleRU: "Базы"
+    }
 })
 
 function Kits() {

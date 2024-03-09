@@ -11,4 +11,7 @@ export const Route = createRootRoute({
             <TanStackRouterDevtools />
         </>
     ),
+    staticData: {
+        titleRU: "Гайд"
+    }
 })

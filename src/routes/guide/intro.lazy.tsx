@@ -1,8 +1,11 @@
-import {createLazyFileRoute} from "@tanstack/react-router";
+import {createFileRoute} from "@tanstack/react-router";
 import Sidebar from "../../layout/Sidebar.tsx";
 
-export const Route = createLazyFileRoute('/guide/intro')({
+export const Route = createFileRoute('/guide/intro')({
     component: Intro,
+    staticData: {
+        titleRU: "Введение"
+    }
 })
 
 function Intro() {

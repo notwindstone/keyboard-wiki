@@ -1,4 +1,4 @@
-import {createLazyFileRoute, Link} from "@tanstack/react-router";
+import {createFileRoute, Link} from "@tanstack/react-router";
 import Section from "../../components/Section.tsx";
 import sections from '../../config/section.json';
 import {Button} from "@mantine/core";
@@ -20,6 +20,9 @@ const Guide = () => {
     )
 }
 
-export const Route = createLazyFileRoute('/guide/')({
+export const Route = createFileRoute('/guide/')({
     component: Guide,
+    staticData: {
+        titleRU: "Гайд"
+    }
 })
