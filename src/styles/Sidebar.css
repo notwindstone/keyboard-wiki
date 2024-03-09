@@ -1,13 +1,18 @@
 .sidebar {
     width: 16rem;
+    flex-shrink: 0;
     border-right: 1px solid var(--mantine-color-default-border);
 }
     .sidebar__body {
-        width: 13rem;
+        width: 16rem;
         position: fixed;
         display: flex;
+        flex-wrap: nowrap;
         overflow-y: scroll;
-        height: calc(100% - 13rem);
+        height: calc(100svh - 4rem);
         flex-direction: column;
-        padding: 1rem 0 0 0;
+        padding: 1rem 1.5rem 1rem 0;
+    }
+    .sidebar__item {
+        flex-shrink: 0;
     }

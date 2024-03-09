@@ -13,6 +13,8 @@
             max-width: 120rem;
         }
     .main__article {
+        padding: 1rem;
+        overflow-x: hidden;
     }
     .main__return-button {
         margin-top: 2rem;
