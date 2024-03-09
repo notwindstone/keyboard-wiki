@@ -21,8 +21,5 @@ const Guide = () => {
 }
 
 export const Route = createFileRoute('/guide/')({
-    component: Guide,
-    staticData: {
-        titleRU: "Гайд"
-    }
+    component: Guide
 })

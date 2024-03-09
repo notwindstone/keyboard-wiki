@@ -1,10 +1,7 @@
 import {createFileRoute, Link} from "@tanstack/react-router";
 
 export const Route = createFileRoute('/resources')({
-    component: Resources,
-    staticData: {
-        titleRU: "Ресурсы"
-    }
+    component: Resources
 })
 
 function Resources() {

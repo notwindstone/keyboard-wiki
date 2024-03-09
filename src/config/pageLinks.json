@@ -1,7 +1,7 @@
 {
-  "intro": "",
-  "kits": "",
-  "keycaps": "",
-  "switches": "",
-  "stabilizers": ""
+  "intro": "https://raw.githubusercontent.com/windstone-aristotle-yellow/keyboard-wiki/main/content/intro.md",
+  "kits": "https://raw.githubusercontent.com/windstone-aristotle-yellow/keyboard-wiki/main/content/kits.md",
+  "keycaps": "https://raw.githubusercontent.com/windstone-aristotle-yellow/keyboard-wiki/main/content/keycaps.md",
+  "switches": "https://raw.githubusercontent.com/windstone-aristotle-yellow/keyboard-wiki/main/content/switches.md",
+  "stabilizers": "https://raw.githubusercontent.com/windstone-aristotle-yellow/keyboard-wiki/main/content/stabilizers.md"
 }
