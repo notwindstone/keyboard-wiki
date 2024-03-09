@@ -4,7 +4,9 @@ import {createRouter, RouterProvider} from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen.ts";
 import '@mantine/core/styles.css';
 import { createTheme, MantineProvider } from '@mantine/core';
+import './styles/index.css'
 import './styles/Header.css'
+import './styles/Sidebar.css'
 import './styles/Main.css'
 import './styles/Resources.css'
 

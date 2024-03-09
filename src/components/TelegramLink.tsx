@@ -2,7 +2,7 @@ import {ActionIcon} from '@mantine/core';
 import { IconBrandTelegram } from '@tabler/icons-react';
 import {Link} from "@tanstack/react-router";
 
-function ThemeScheme() {
+const ThemeScheme = () => {
     return (
         <ActionIcon
             component={Link}

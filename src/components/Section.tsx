@@ -2,7 +2,6 @@ import {Button, Flex} from "@mantine/core";
 import {Link} from "@tanstack/react-router";
 import {useDisclosure} from "@mantine/hooks";
 
-
 const Section = (props: { title: string; description: string; imageURL: string; imageAlt: string; pageURL: string; }) => {
     const { title, description, imageURL, imageAlt, pageURL } = props
 
