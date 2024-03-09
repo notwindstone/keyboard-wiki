@@ -2,8 +2,8 @@
     padding-top: 4rem;
 }
     .main__body {
-        width: calc(75% - 2rem);
-        max-width: 90rem;
+        width: calc(100% - 2rem);
+        max-width: 80rem;
         margin: auto;
         display: flex;
         flex-direction: column;
