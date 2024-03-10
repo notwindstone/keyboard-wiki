@@ -13,8 +13,31 @@
             max-width: 120rem;
         }
     .main__article {
+        display: flex;
+        flex-direction: column;
         padding: 1rem;
         overflow-x: hidden;
+    }
+    .main__nav-button {
+        flex: 1;
+        font-weight: 400;
+        height: 5rem;
+    }
+    .main__nav-text-wrapper {}
+        .main__nav-text-wrapper--previous {
+            text-align: right;
+        }
+        .main__nav-text-wrapper--next {
+            text-align: left;
+        }
+    .main__nav-title {
+        font-size: 1.2em;
+        margin: 0 0 0.75rem 0;
+    }
+    .main__nav-description {
+        color: var(--mantine-color-gray-6);
+        font-size: 1em;
+        margin: 0;
     }
     .main__return-button {
         margin-top: 2rem;
@@ -24,7 +47,7 @@
         object-position: center;
         height: 20rem;
         width: 100%;
-        border-radius: var(--mantine-radius-sm);
+        border-radius: var(--mantine-radius-md);
     }
     .main__block {
         flex: 1;
