@@ -12,8 +12,10 @@ const Index = () => {
                     {/* @ts-ignore */}
                     <zero-md src={mainPageURL}>
                         <template>
-                            <style>
-                            </style>
+                            <link
+                                rel="stylesheet"
+                                href="https://raw.githubusercontent.com/windstone-aristotle-yellow/windstone-aristotle-yellow.github.io/main/src/styles/Main.css"
+                            />
                         </template>
                         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
                         {/* @ts-ignore */}
