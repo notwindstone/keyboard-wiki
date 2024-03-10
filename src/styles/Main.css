@@ -1,5 +1,6 @@
 .main {
     padding-top: 4rem;
+    padding-bottom: 2rem;
 }
     .main__body {
         width: calc(100% - 2rem);
