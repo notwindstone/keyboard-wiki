@@ -15,6 +15,7 @@
         margin: auto;
     }
     .header__title {
+        z-index: 10;
         margin: 0;
         font-family: var(--mantine-font-family-monospace);
     }

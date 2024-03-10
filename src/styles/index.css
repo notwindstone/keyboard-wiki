@@ -5,3 +5,15 @@
     .link:hover {
         color: var(--mantine-color-blue-light-color);
     }
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+    .main__title--welcome {
+        overflow-wrap: break-word;
+    }
+    .sidebar {
+        display: none
+    }
+}

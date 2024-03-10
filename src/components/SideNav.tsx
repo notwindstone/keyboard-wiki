@@ -7,6 +7,8 @@ import SideNavItem from "./SideNavItem.tsx";
 import sidebar from '../config/sidebar.json'
 
 const SideNav = () => {
+
+
     return (
         <div className="sidebar__body">
             <Button leftSection={<IconCompass stroke={1.5}/>} justify="flex-start" variant="filled" component={Link}

@@ -3,7 +3,17 @@ import {Button, Flex} from "@mantine/core";
 import ThemeScheme from "./ThemeScheme.tsx";
 import TelegramLink from "./TelegramLink.tsx";
 
-const NavBar = () => {
+const NavBar = (props: { isMobile: boolean }) => {
+    const { isMobile } = props
+
+    if (isMobile) {
+        return (
+            <>
+                <ThemeScheme />
+            </>
+        )
+    }
+
     return (
         <nav>
             <Flex

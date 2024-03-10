@@ -65,6 +65,7 @@ const Content = (props: { page: string }) => {
                 className="main__navigation"
                 justify='flex-start'
                 gap='2rem'
+                wrap='wrap'
             >
                 <Button
                     component={Link}

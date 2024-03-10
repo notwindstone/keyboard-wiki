@@ -25,7 +25,9 @@
         width: 100%;
         margin: 0;
     }
-    .sidebar__stack {}
+    .sidebar__stack {
+        padding-left: 1.5rem;
+    }
     .sidebar__link {
         font-weight: 400;
         color: var(--mantine-color-text);
@@ -51,3 +53,22 @@
         .sidebar__heading-button:hover {
             background: var(--mantine-color-default);
         }
+
+.mobile-sidebar {
+    padding-top: 4rem;
+    position: fixed;
+    width: 100%;
+    height: 100svh;
+    background: var(--mantine-color-body);
+    top: 0;
+}
+    .mobile-sidebar__body {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .mobile-sidebar__button {
+        width: 3rem;
+        height: 3rem;
+    }
