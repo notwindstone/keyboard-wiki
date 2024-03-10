@@ -38,7 +38,7 @@
             background: none;
         }
         .sidebar__link:focus {
-            color: var(--mantine-primary-color-contrast);
+            color: var(--button-color);
             border-left: 1px solid var(--mantine-color-blue-5);
             background: var(--mantine-primary-color-light-hover);
         }
