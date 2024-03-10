@@ -12,6 +12,9 @@
         .main__body--guide-item {
             max-width: 120rem;
         }
+    .main__markdown-body {
+        margin-top: 15svh;
+    }
     .main__article {
         display: flex;
         flex-direction: column;
