@@ -1,1 +1,0 @@
-import{c as s,j as e,F as a}from"./index-BJwgCUlg.js";import{S as i,C as t}from"./Content-DvSPLY8r.js";const c=s("/guide/keycaps")({component:n});function n(){return e.jsx("main",{className:"main",children:e.jsx("div",{className:"main__body main__body--guide-item",children:e.jsxs(a,{justify:"flex-start",children:[e.jsx(i,{}),e.jsx(t,{page:"keycaps"})]})})})}export{c as Route};
