@@ -14,16 +14,16 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as IndexImport } from './routes/index'
+import { Route as GuideIndexImport } from './routes/guide/index'
+import { Route as GuideSwitchesImport } from './routes/guide/switches'
+import { Route as GuideStabilizersImport } from './routes/guide/stabilizers'
+import { Route as GuideKitsImport } from './routes/guide/kits'
+import { Route as GuideKeycapsImport } from './routes/guide/keycaps'
+import { Route as GuideIntroImport } from './routes/guide/intro'
 
 // Create Virtual Routes
 
 const ResourcesLazyImport = createFileRoute('/resources')()
-const GuideIndexLazyImport = createFileRoute('/guide/')()
-const GuideSwitchesLazyImport = createFileRoute('/guide/switches')()
-const GuideStabilizersLazyImport = createFileRoute('/guide/stabilizers')()
-const GuideKitsLazyImport = createFileRoute('/guide/kits')()
-const GuideKeycapsLazyImport = createFileRoute('/guide/keycaps')()
-const GuideIntroLazyImport = createFileRoute('/guide/intro')()
 
 // Create/Update Routes
 
@@ -37,39 +37,35 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideIndexLazyRoute = GuideIndexLazyImport.update({
+const GuideIndexRoute = GuideIndexImport.update({
   path: '/guide/',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/guide/index.lazy').then((d) => d.Route))
+} as any)
 
-const GuideSwitchesLazyRoute = GuideSwitchesLazyImport.update({
+const GuideSwitchesRoute = GuideSwitchesImport.update({
   path: '/guide/switches',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/guide/switches.lazy').then((d) => d.Route),
-)
+} as any)
 
-const GuideStabilizersLazyRoute = GuideStabilizersLazyImport.update({
+const GuideStabilizersRoute = GuideStabilizersImport.update({
   path: '/guide/stabilizers',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/guide/stabilizers.lazy').then((d) => d.Route),
-)
+} as any)
 
-const GuideKitsLazyRoute = GuideKitsLazyImport.update({
+const GuideKitsRoute = GuideKitsImport.update({
   path: '/guide/kits',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/guide/kits.lazy').then((d) => d.Route))
+} as any)
 
-const GuideKeycapsLazyRoute = GuideKeycapsLazyImport.update({
+const GuideKeycapsRoute = GuideKeycapsImport.update({
   path: '/guide/keycaps',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/guide/keycaps.lazy').then((d) => d.Route))
+} as any)
 
-const GuideIntroLazyRoute = GuideIntroLazyImport.update({
+const GuideIntroRoute = GuideIntroImport.update({
   path: '/guide/intro',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/guide/intro.lazy').then((d) => d.Route))
+} as any)
 
 // Populate the FileRoutesByPath interface
 
@@ -84,27 +80,27 @@ declare module '@tanstack/react-router' {
       parentRoute: typeof rootRoute
     }
     '/guide/intro': {
-      preLoaderRoute: typeof GuideIntroLazyImport
+      preLoaderRoute: typeof GuideIntroImport
       parentRoute: typeof rootRoute
     }
     '/guide/keycaps': {
-      preLoaderRoute: typeof GuideKeycapsLazyImport
+      preLoaderRoute: typeof GuideKeycapsImport
       parentRoute: typeof rootRoute
     }
     '/guide/kits': {
-      preLoaderRoute: typeof GuideKitsLazyImport
+      preLoaderRoute: typeof GuideKitsImport
       parentRoute: typeof rootRoute
     }
     '/guide/stabilizers': {
-      preLoaderRoute: typeof GuideStabilizersLazyImport
+      preLoaderRoute: typeof GuideStabilizersImport
       parentRoute: typeof rootRoute
     }
     '/guide/switches': {
-      preLoaderRoute: typeof GuideSwitchesLazyImport
+      preLoaderRoute: typeof GuideSwitchesImport
       parentRoute: typeof rootRoute
     }
     '/guide/': {
-      preLoaderRoute: typeof GuideIndexLazyImport
+      preLoaderRoute: typeof GuideIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -115,12 +111,12 @@ declare module '@tanstack/react-router' {
 export const routeTree = rootRoute.addChildren([
   IndexRoute,
   ResourcesLazyRoute,
-  GuideIntroLazyRoute,
-  GuideKeycapsLazyRoute,
-  GuideKitsLazyRoute,
-  GuideStabilizersLazyRoute,
-  GuideSwitchesLazyRoute,
-  GuideIndexLazyRoute,
+  GuideIntroRoute,
+  GuideKeycapsRoute,
+  GuideKitsRoute,
+  GuideStabilizersRoute,
+  GuideSwitchesRoute,
+  GuideIndexRoute,
 ])
 
 /* prettier-ignore-end */
