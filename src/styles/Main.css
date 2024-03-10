@@ -28,7 +28,10 @@
     }
     .main__block {
         flex: 1;
+        min-width: calc(50% - 1rem);
         height: 20rem;
+        overflow: hidden;
+        overflow-wrap: break-word;
     }
     .main__title {
         margin: 0;
