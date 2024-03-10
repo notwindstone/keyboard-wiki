@@ -1,19 +1,5 @@
-import {createFileRoute, Link} from "@tanstack/react-router";
-import {Button} from "@mantine/core";
+import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
-    component: Index,
+  component: () => <div>Hello /!</div>
 })
-
-function Index() {
-    return (
-        <main className="main">
-            <div className="main__body">
-                <div>
-                    <Button component={Link} to="/guide/">Перейти в гайд</Button>
-                    <Button component={Link} to="/resources/">Перейти в ресурсы</Button>
-                </div>
-            </div>
-        </main>
-    )
-}

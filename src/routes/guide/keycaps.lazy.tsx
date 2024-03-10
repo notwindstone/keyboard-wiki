@@ -3,11 +3,7 @@ import {Flex} from "@mantine/core";
 import Sidebar from "../../layout/Sidebar.tsx";
 import Content from "../../layout/Content.tsx";
 
-export const Route = createFileRoute('/guide/keycaps')({
-  component: Keycaps
-})
-
-function Keycaps() {
+const Keycaps = () => {
     return (
         <main className="main">
             <div className="main__body main__body--guide-item">
@@ -21,3 +17,7 @@ function Keycaps() {
         </main>
     )
 }
+
+export const Route = createFileRoute('/guide/keycaps')({
+    component: Keycaps
+})

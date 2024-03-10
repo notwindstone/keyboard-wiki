@@ -3,11 +3,7 @@ import Sidebar from "../../layout/Sidebar.tsx";
 import {Flex} from "@mantine/core";
 import Content from "../../layout/Content.tsx";
 
-export const Route = createFileRoute('/guide/intro')({
-    component: Intro
-})
-
-function Intro() {
+const Intro = () => {
     return (
         <main className="main">
             <div className="main__body main__body--guide-item">
@@ -21,3 +17,7 @@ function Intro() {
         </main>
     )
 }
+
+export const Route = createFileRoute('/guide/intro')({
+    component: Intro
+})
