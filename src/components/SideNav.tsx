@@ -4,29 +4,18 @@ import {
     IconCompass,
 } from "@tabler/icons-react";
 import SideNavItem from "./SideNavItem.tsx";
+import sidebar from '../config/sidebar.json'
 
 const SideNav = () => {
-    const intro = [
-        {
-            "paragraphName": "Параграф 1",
-            "link": "/guide/intro#anatomy"
-        },
-        {
-            "paragraphName": "Параграф 2",
-            "link": "/guide/intro#something"
-        }
-    ]
-
     return (
         <div className="sidebar__body">
             <Button leftSection={<IconCompass stroke={1.5}/>} justify="flex-start" variant="filled" component={Link}
                     to="/guide/" className="sidebar__item">Вернуться</Button>
-            <SideNavItem title="Введение" sections={intro} />
-            <Button variant="default" component={Link} to="/guide/kits" className="sidebar__item">Базы</Button>
-            <Button variant="default" component={Link} to="/guide/keycaps" className="sidebar__item">Кейкапы</Button>
-            <Button variant="default" component={Link} to="/guide/switches" className="sidebar__item">Свитчи</Button>
-            <Button variant="default" component={Link} to="/guide/stabilizers"
-                    className="sidebar__item">Стабилизаторы</Button>
+            <SideNavItem title="Введение" sections={sidebar.intro} />
+            <SideNavItem title="Базы" sections={sidebar.kits} />
+            <SideNavItem title="Кейкапы" sections={sidebar.keycaps} />
+            <SideNavItem title="Свитчи" sections={sidebar.switches} />
+            <SideNavItem title="Стабилизаторы" sections={sidebar.stabilizers} />
         </div>
     )
 }

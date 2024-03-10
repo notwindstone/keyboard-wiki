@@ -1,0 +1,52 @@
+{
+  "intro": [
+    {
+      "paragraphName": "Параграф 1",
+      "link": "/guide/intro#anatomy"
+    },
+    {
+      "paragraphName": "Параграф 2",
+      "link": "/guide/intro#something"
+    }
+  ],
+  "kits": [
+    {
+      "paragraphName": "Параграф 1",
+      "link": "/guide/kits#anatomy"
+    },
+    {
+      "paragraphName": "Параграф 2",
+      "link": "/guide/kits#something"
+    }
+  ],
+  "keycaps": [
+    {
+      "paragraphName": "Параграф 1",
+      "link": "/guide/keycaps#anatomy"
+    },
+    {
+      "paragraphName": "Параграф 2",
+      "link": "/guide/keycaps#something"
+    }
+  ],
+  "switches": [
+    {
+      "paragraphName": "Параграф 1",
+      "link": "/guide/switches#anatomy"
+    },
+    {
+      "paragraphName": "Параграф 2",
+      "link": "/guide/switches#something"
+    }
+  ],
+  "stabilizers": [
+    {
+      "paragraphName": "Параграф 1",
+      "link": "/guide/stabilizers#anatomy"
+    },
+    {
+      "paragraphName": "Параграф 2",
+      "link": "/guide/stabilizers#something"
+    }
+  ]
+}
