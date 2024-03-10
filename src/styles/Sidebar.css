@@ -16,6 +16,7 @@
     }
     .sidebar__item {
         flex-shrink: 0;
+        height: 3rem;
     }
     .sidebar__separator {
         border: none;
@@ -24,3 +25,29 @@
         width: 100%;
         margin: 0;
     }
+    .sidebar__stack {}
+    .sidebar__link {
+        font-weight: 400;
+        color: var(--mantine-color-text);
+        background: none;
+        border: none;
+        border-radius: 0 var(--mantine-radius-sm) var(--mantine-radius-sm) 0;
+        border-left: 1px solid var(--mantine-color-default-border);
+    }
+        .sidebar__link:hover {
+            background: none;
+        }
+        .sidebar__link:focus {
+            color: var(--mantine-primary-color-contrast);
+            border-left: 1px solid var(--mantine-color-blue-5);
+            background: var(--mantine-primary-color-light-hover);
+        }
+    .sidebar__heading-button {
+        border: none;
+        height: 2rem;
+        text-transform: uppercase;
+        font-family: var(--mantine-font-family-monospace);
+    }
+        .sidebar__heading-button:hover {
+            background: var(--mantine-color-default);
+        }

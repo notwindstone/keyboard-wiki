@@ -13,7 +13,7 @@ const Index = () => {
                     <h1 className="main__title main__title--welcome">Гайд по механическим клавиатурам</h1>
                     <p className="main__description main__description--welcome">Выбор механической клавиатуры лишь с
                         первого взгляда кажется простым. На деле существует огромное количество факторов, влияющих на
-                        тот или иной аспект клавиатуры. Данный гайд поможет разобраться в этом всём</p>
+                        тот или иной аспект клавиатуры. Данный гайд поможет разобраться в этом всём.</p>
                     <div className="main__buttons-container">
                         <Button className="main__button main__button--welcome" variant="gradient" leftSection={<IconBook2 stroke={1.5} />} component={Link} to="/guide">Перейти в гайд</Button>
                         <Button className="main__button main__button--welcome" color="var(--mantine-color-black)" variant="filled" leftSection={<IconBrandGithub stroke={1.5} />} component={Link} to="">Предложить правки</Button>
@@ -21,7 +21,7 @@ const Index = () => {
                     <div className="main__posters-container">
                         <img
                             className="main__poster main__poster--first"
-                            src="https://images.squarespace-cdn.com/content/v1/5e5af256556661723b861bd1/1625979310825-E8YFFD50PVI5EWR2QSNO/20210710_194231.jpg"
+                            src="https://preview.redd.it/zp19leqjigk71.jpg?width=1080&crop=smart&auto=webp&s=4554c6b64462a935469d80d1f95088228dfdd4f7"
                             alt="Alps SKCM switches image"
                         />
                         <img

@@ -7,8 +7,13 @@ const Resources = () => {
     return (
         <main className="main">
             <div className="main__body">
-                <p>123</p>
-                <p>123</p>
+                {
+                    resources.map(({ title, link }) => {
+                        return (
+                            <Link to={link}>{title}</Link>
+                        )
+                    })
+                }
             </div>
         </main>
     )
