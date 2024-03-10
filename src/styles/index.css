@@ -3,5 +3,5 @@
     color: inherit;
 }
     .link:hover {
-        color: var(--mantine-color-blue-light-color)
+        color: var(--mantine-color-blue-light-color);
     }

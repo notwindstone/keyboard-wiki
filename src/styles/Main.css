@@ -12,7 +12,7 @@
         .main__body--guide-item {
             max-width: 120rem;
         }
-    .main__markdown-body {
+    .main__welcome {
         margin-top: 15svh;
     }
     .main__article {
@@ -63,12 +63,62 @@
         margin: 0;
         font-size: 2rem;
     }
+        .main__title--welcome {
+            font-weight: 900;
+            font-family: var(--mantine-font-family-monospace);
+            margin: 0 0 1rem 0;
+            line-height: 4rem;
+            font-size: 4rem;
+        }
     .main__description {
         margin: 0 0 1rem 0;
     }
-
-.markdown-body {
-    h1 {
-        font-size: 1rem;
+        .main__description--welcome {
+            border-left: 0.25rem solid var(--mantine-color-default-border);
+            padding-left: 2rem;
+            font-size: 1.25rem;
+            font-family: var(--mantine-font-family);
+        }
+    .main__posters-container {
+        position: relative;
+        margin-top: 2rem;
+        height: 30rem;
+        margin-bottom: 2rem;
     }
-}
+    .main__poster {
+        object-fit: cover;
+        object-position: center;
+        height: 24rem;
+        position: absolute;
+        width: 60%;
+        border-radius: var(--mantine-radius-md);
+        transition: 0.15s ease
+    }
+        .main__poster:hover {
+            transform: scale(105%)
+        }
+        .main__poster--first {
+            z-index: 1;
+        }
+        .main__poster--second {
+            z-index: 2;
+            top: 3rem;
+            left: 50%;
+            transform: translateX(-52.5%);
+        }
+            .main__poster--second:hover {
+                transform: scale(105%) translateX(-50%)
+            }
+        .main__poster--third {
+            z-index: 3;
+            top: 6rem;
+            right: 0;
+        }
+    .main__buttons-container {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .main__button--welcome {
+        height: 3rem;
+    }

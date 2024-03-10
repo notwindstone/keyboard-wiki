@@ -16,4 +16,5 @@
     }
     .header__title {
         margin: 0;
+        font-family: var(--mantine-font-family-monospace);
     }
