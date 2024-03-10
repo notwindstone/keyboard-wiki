@@ -9,16 +9,44 @@ const Content = (props: { page: string }) => {
     // @ts-ignore
     const pageURL = pageLinks[page]
 
-    let nextPage, previousPage
+    let nextPage, previousPage, linkToNextPage, linkToPreviousPage
 
     switch (page) {
         case "intro":
             nextPage = "Базы"
             previousPage = "Гайд"
+            linkToNextPage = "/guide/kits"
+            linkToPreviousPage = "/guide/"
+            break
+        case "kits":
+            nextPage = "Кейкапы"
+            previousPage = "Введение"
+            linkToNextPage = "/guide/keycaps"
+            linkToPreviousPage = "/guide/intro"
+            break
+        case "keycaps":
+            nextPage = "Свитчи"
+            previousPage = "Базы"
+            linkToNextPage = "/guide/switches"
+            linkToPreviousPage = "/guide/kits"
+            break
+        case "switches":
+            nextPage = "Стабилизаторы"
+            previousPage = "Кейкапы"
+            linkToNextPage = "/guide/stabilizers"
+            linkToPreviousPage = "/guide/keycaps"
+            break
+        case "stabilizers":
+            nextPage = "Вернуться на главную"
+            previousPage = "Свитчи"
+            linkToNextPage = "/"
+            linkToPreviousPage = "/guide/switches"
             break
         default:
             nextPage = "Главная"
             previousPage = "Главная"
+            linkToNextPage = "/"
+            linkToPreviousPage = "/"
             break
     }
 
@@ -41,7 +69,7 @@ const Content = (props: { page: string }) => {
                 <Button
                     component={Link}
                     justify="space-between"
-                    to="/"
+                    to={linkToPreviousPage}
                     variant="default"
                     className="main__nav-button"
                     leftSection={<IconArrowLeft stroke={1.2} size={24} />}
@@ -54,7 +82,7 @@ const Content = (props: { page: string }) => {
                 <Button
                     component={Link}
                     justify="space-between"
-                    to="/"
+                    to={linkToNextPage}
                     variant="default"
                     className="main__nav-button"
                     rightSection={<IconArrowRight stroke={1.2} size={24} />}
