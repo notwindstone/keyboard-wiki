@@ -1,7 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
+import pageLinks from '../config/pageLinks.json'
 
 const Index = () => {
-    const mainPageURL = ""
+    const mainPageURL = pageLinks.main
 
     return (
         <main className="main">
