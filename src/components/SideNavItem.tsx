@@ -4,7 +4,7 @@ import {Link} from "@tanstack/react-router";
 import {useDisclosure} from "@mantine/hooks";
 
 
-const SideNavItem = (props: { title: string, sections: any }) => {
+const SideNavItem = (props: { title: string, sections: typeof Array.prototype}) => {
     const { title, sections } = props
     const [hidden, { toggle }] = useDisclosure(true)
 
