@@ -30,7 +30,6 @@ const SideNavItem = (props: { title: string, sections: any }) => {
             </Button>
             <Stack
                 className="sidebar__stack"
-                h={300}
                 bg="var(--mantine-color-body)"
                 justify="flex-start"
                 gap="0"
