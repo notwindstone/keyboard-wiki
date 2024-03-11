@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import '@mantine/core/styles.css';
 import { createTheme, MantineProvider } from '@mantine/core';
-import {createRouter, RouterProvider} from "@tanstack/react-router";
-import {routeTree} from "./routeTree.gen.ts";
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { routeTree } from "./routeTree.gen.ts";
 
 const theme = createTheme({
-    fontFamily: 'Montserrat, sans-serif',
+    fontFamily: 'Inter',
     defaultRadius: 'md'
 });
 
