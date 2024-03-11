@@ -11,18 +11,43 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
+import { Route as ArticlesIndexImport } from './routes/articles/index'
+import { Route as ArticlesSwitchesIndexImport } from './routes/articles/switches/index'
+import { Route as ArticlesKeycapsIndexImport } from './routes/articles/keycaps/index'
+import { Route as ArticlesSwitchesForceCurvesImport } from './routes/articles/switches/forceCurves'
+import { Route as ArticlesKeycapsMaterialImport } from './routes/articles/keycaps/material'
 
 // Create/Update Routes
 
-const AboutRoute = AboutImport.update({
-  path: '/about',
+const IndexRoute = IndexImport.update({
+  path: '/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const IndexRoute = IndexImport.update({
-  path: '/',
+const ArticlesIndexRoute = ArticlesIndexImport.update({
+  path: '/articles/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesIndexRoute = ArticlesSwitchesIndexImport.update({
+  path: '/articles/switches/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesKeycapsIndexRoute = ArticlesKeycapsIndexImport.update({
+  path: '/articles/keycaps/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesForceCurvesRoute =
+  ArticlesSwitchesForceCurvesImport.update({
+    path: '/articles/switches/forceCurves',
+    getParentRoute: () => rootRoute,
+  } as any)
+
+const ArticlesKeycapsMaterialRoute = ArticlesKeycapsMaterialImport.update({
+  path: '/articles/keycaps/material',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -34,8 +59,24 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/about': {
-      preLoaderRoute: typeof AboutImport
+    '/articles/': {
+      preLoaderRoute: typeof ArticlesIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/keycaps/material': {
+      preLoaderRoute: typeof ArticlesKeycapsMaterialImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/forceCurves': {
+      preLoaderRoute: typeof ArticlesSwitchesForceCurvesImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/keycaps/': {
+      preLoaderRoute: typeof ArticlesKeycapsIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/': {
+      preLoaderRoute: typeof ArticlesSwitchesIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -43,6 +84,13 @@ declare module '@tanstack/react-router' {
 
 // Create and export the route tree
 
-export const routeTree = rootRoute.addChildren([IndexRoute, AboutRoute])
+export const routeTree = rootRoute.addChildren([
+  IndexRoute,
+  ArticlesIndexRoute,
+  ArticlesKeycapsMaterialRoute,
+  ArticlesSwitchesForceCurvesRoute,
+  ArticlesKeycapsIndexRoute,
+  ArticlesSwitchesIndexRoute,
+])
 
 /* prettier-ignore-end */
