@@ -1,0 +1,33 @@
+.actionIcon {
+    color: inherit;
+    transition: var(--custom-transition-delay);
+
+    @mixin hover {
+        color: light-dark(var(--mantine-color-dark-4), var(--mantine-color-gray-0));
+    }
+}
+
+.icon {
+    width: rem(22px);
+    height: rem(22px);
+}
+
+.dark {
+    @mixin dark {
+        display: none;
+    }
+
+    @mixin light {
+        display: block;
+    }
+}
+
+.light {
+    @mixin light {
+        display: none;
+    }
+
+    @mixin dark {
+        display: block;
+    }
+}

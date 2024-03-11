@@ -1,0 +1,30 @@
+.control {
+    display: block;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    border-radius: var(--mantine-radius-md);
+    font-weight: 500;
+    transition: var(--custom-transition-delay);
+
+    @mixin hover {
+        color: light-dark(var(--mantine-color-dark-4), var(--mantine-color-gray-0));
+    }
+}
+
+.header {
+    background: light-dark(white, var(--custom-dark-header-background-color));
+    backdrop-filter: var(--custom-dark-header-backdrop-blur);
+}
+
+.main {
+    background: light-dark(white, var(--custom-dark-main-background-color))
+}
+
+.sidebar {
+    background: light-dark(white, var(--custom-dark-sidebar-background-color));
+    backdrop-filter: var(--custom-dark-sidebar-backdrop-blur);
+    border-right: none;
+}
+
+.title {
+    font-family: var(--mantine-font-family-monospace);
+}

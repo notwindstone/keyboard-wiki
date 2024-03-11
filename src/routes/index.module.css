@@ -1,0 +1,7 @@
+.title {
+    color: light-dark(var(--custom-light-text-secondary-color), var(--custom-dark-text-secondary-color));
+}
+
+.markedTitle {
+    color: var(--mantine-color-text);;
+}
