@@ -3,6 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { IconKeyboard } from '@tabler/icons-react';
 import classes from './MobileNavbar.module.css';
 import ThemeChanger from "../ThemeChanger/ThemeChanger.tsx";
+import {NavbarLinksGroup} from "../NavbarLinksGroup/NavbarLinksGroup.tsx";
 
 const MobileNavbar = ({ children }: any) => {
     const [opened, { toggle }] = useDisclosure();
@@ -33,6 +34,7 @@ const MobileNavbar = ({ children }: any) => {
             </AppShell.Header>
 
             <AppShell.Navbar className={classes.sidebar} py="md" px={4}>
+                <NavbarLinksGroup />
                 <UnstyledButton className={classes.control}>Главная</UnstyledButton>
                 <UnstyledButton className={classes.control}>Документация</UnstyledButton>
             </AppShell.Navbar>

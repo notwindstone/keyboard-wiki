@@ -28,6 +28,10 @@
 
 .titleBar {
     transform: translateX(-50%);
+
+    @media (max-width: $mantine-breakpoint-md) {
+        transform: translateX(0);
+    }
 }
 
 .title {
