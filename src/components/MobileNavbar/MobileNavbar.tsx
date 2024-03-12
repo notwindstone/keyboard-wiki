@@ -3,7 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { IconKeyboard } from '@tabler/icons-react';
 import classes from './MobileNavbar.module.css';
 import ThemeChanger from "../ThemeChanger/ThemeChanger.tsx";
-import {NavbarLinksGroup} from "../NavbarLinksGroup/NavbarLinksGroup.tsx";
+import NavbarLinksGroup from "../NavbarLinksGroup/NavbarLinksGroup.tsx";
 import {Link} from "@tanstack/react-router";
 
 const MobileNavbar = ({ children }: any) => {
