@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Group, Box, Collapse, ThemeIcon, Text, UnstyledButton, rem } from '@mantine/core';
+import {Group, Box, Collapse, ThemeIcon, Text, UnstyledButton, rem, ScrollArea} from '@mantine/core';
 import { IconCalendarStats, IconChevronRight } from '@tabler/icons-react';
 import classes from './NavbarLinksGroup.module.css';
 
@@ -72,16 +72,43 @@ const mockdata = [
             { label: 'Releases schedule', link: '/' },
         ],
     },
+    {
+        label: 'Документация',
+        icon: IconCalendarStats,
+        links: [
+            { label: 'Upcoming releases', link: '/' },
+            { label: 'Previous releases', link: '/' },
+            { label: 'Releases schedule', link: '/' },
+        ],
+    },
+    {
+        label: 'Документация',
+        icon: IconCalendarStats,
+        links: [
+            { label: 'Upcoming releases', link: '/' },
+            { label: 'Previous releases', link: '/' },
+            { label: 'Releases schedule', link: '/' },
+        ],
+    },
+    {
+        label: 'Документация',
+        icon: IconCalendarStats,
+        links: [
+            { label: 'Upcoming releases', link: '/' },
+            { label: 'Previous releases', link: '/' },
+            { label: 'Releases schedule', link: '/' },
+        ],
+    },
 ]
 
 export function NavbarLinksGroup() {
     return (
-        <Box mih={220} p="md">
+        <ScrollArea mih={220}>
             {mockdata.map((data) => {
                 return (
                     <LinksGroup {...data} />
                 )
             })}
-        </Box>
+        </ScrollArea>
     );
 }

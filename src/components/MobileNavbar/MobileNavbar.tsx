@@ -35,8 +35,6 @@ const MobileNavbar = ({ children }: any) => {
 
             <AppShell.Navbar className={classes.sidebar} py="md" px={4}>
                 <NavbarLinksGroup />
-                <UnstyledButton className={classes.control}>Главная</UnstyledButton>
-                <UnstyledButton className={classes.control}>Документация</UnstyledButton>
             </AppShell.Navbar>
 
             <AppShell.Main className={classes.main}>
