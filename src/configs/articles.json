@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Основы",
+    "content": "Введение, термины, размеры, раскладки",
+    "imageURL": "https://d2dqts71r73516.cloudfront.net/1658189887894_resized-red-1.jpeg",
+    "imageAlt": "Owlab Voice65 keyboard image",
+    "link": "/articles/intro"
+  },
+  {
+    "title": "Базы для клавиатур",
+    "content": "Плейты, маунты",
+    "imageURL": "https://thekey.company/cdn/shop/products/M1Website-4_1024x1024.jpg?v=1681395260",
+    "imageAlt": "Monsgeek M1 Barebone kit image",
+    "link": "/articles/kits"
+  },
+  {
+    "title": "Свитчи",
+    "content": "Виды, анатомия, график силы нажатия",
+    "imageURL": "https://cdn.shopify.com/s/files/1/1679/2319/files/DSC08448_1024x1024.jpg?v=1597791918",
+    "imageAlt": "C3Equalz Kiwi switches image",
+    "link": "/articles/switches"
+  },
+  {
+    "title": "Кейкапы",
+    "content": "Материалы, виды",
+    "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+    "imageAlt": "ePBT Black White keycaps image",
+    "link": "/articles/keycaps"
+  },
+  {
+    "title": "Стабилизаторы",
+    "content": "Виды",
+    "imageURL": "https://modedesigns.com/cdn/shop/products/IMG_3332.jpg?crop=center&height=840&v=1637255624&width=840",
+    "imageAlt": "Some random keyboard stabilizers image",
+    "link": "/articles/stabilizers"
+  }
+]
