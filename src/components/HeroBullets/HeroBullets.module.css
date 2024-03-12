@@ -7,10 +7,24 @@
     position: relative;
     padding-top: rem(200px);
     padding-bottom: rem(120px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: $mantine-breakpoint-md) {
         padding-bottom: rem(80px);
         padding-top: rem(80px);
+    }
+}
+
+.group {
+    flex: 1;
+    min-width: calc(50% - 0.5rem);
+    min-height: fit-content;
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        flex: initial;
+        margin-bottom: 3rem;
     }
 }
 
@@ -25,7 +39,7 @@
     padding: 0;
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: $mantine-breakpoint-md) {
         font-size: rem(42px);
         line-height: 1.2;
     }
@@ -35,7 +49,7 @@
     margin-top: var(--mantine-spacing-xl);
     font-size: rem(24px);
 
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: $mantine-breakpoint-md) {
         font-size: rem(18px);
     }
 }
@@ -43,7 +57,7 @@
 .controls {
     margin-top: calc(var(--mantine-spacing-xl) * 2);
 
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: $mantine-breakpoint-md) {
         margin-top: var(--mantine-spacing-xl);
     }
 }
@@ -53,10 +67,40 @@
     padding-left: rem(38px);
     padding-right: rem(38px);
 
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: $mantine-breakpoint-md) {
         height: rem(54px);
         padding-left: rem(18px);
         padding-right: rem(18px);
         flex: 1;
     }
+}
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+    min-height: rem(384px);
+    width: 100%;
+}
+
+.bigImage {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-radius: var(--mantine-radius-md);
+}
+    .bigImage:nth-of-type(1) {
+        right: 0;
+    }
+    .bigImage:nth-of-type(2) {
+        top: 0;
+    }
+    .bigImage:nth-of-type(3) {
+        bottom: 0;
+    }
+
+.smallImage {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border-radius: var(--mantine-radius-md);
 }

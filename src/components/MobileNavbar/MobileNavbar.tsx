@@ -10,22 +10,22 @@ export function MobileNavbar({ children }: any) {
     return (
         <AppShell
             header={{ height: 60 }}
-            navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
+            navbar={{ width: 300, breakpoint: 'md', collapsed: { desktop: true, mobile: !opened } }}
             padding="md"
         >
             <AppShell.Header className={classes.header}>
                 <Group h="100%" px="md" className={classes.header}>
                     <Group justify="space-between" style={{ flex: 1 }}>
-                        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+                        <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="md" />
+                        <Group gap={0} visibleFrom="md">
+                            <UnstyledButton className={classes.control}>Главная</UnstyledButton>
+                            <UnstyledButton className={classes.control}>Документация</UnstyledButton>
+                        </Group>
                         <Group>
                             <ThemeIcon variant="gradient" size="lg">
                                 <IconKeyboard size={30} stroke={1.5} />
                             </ThemeIcon>
                             <Title className={classes.title}>HolyBoards</Title>
-                        </Group>
-                        <Group gap={0} visibleFrom="sm">
-                            <UnstyledButton className={classes.control}>Главная</UnstyledButton>
-                            <UnstyledButton className={classes.control}>Документация</UnstyledButton>
                         </Group>
                         <ThemeChanger />
                     </Group>

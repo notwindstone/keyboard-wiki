@@ -1,14 +1,19 @@
 :root {
     --custom-transition-delay: 0.15s ease;
     /* Dark theme */
-    --custom-dark-header-background-color: #00000088;
+    --custom-dark-header-background-color: #00000044;
     --custom-dark-header-backdrop-blur: blur(12px);
-    --custom-dark-sidebar-background-color: #00000088;
+    --custom-dark-header-border-color: #34243c88;
+    --custom-dark-sidebar-background-color: #00000066;
     --custom-dark-sidebar-backdrop-blur: blur(12px);
-    --custom-dark-main-background-color: #000000;
+    --custom-dark-main-background-color: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(145, 119, 198, 0.3), #00000000);
     --custom-dark-theme-icon-color: #ffffff;
     --custom-dark-text-secondary-color: #878787;
     /* Light theme */
     --custom-light-theme-icon-color: #000000;
     --custom-light-text-secondary-color: #3f4344;
+}
+
+body {
+    background: #090012;
 }
