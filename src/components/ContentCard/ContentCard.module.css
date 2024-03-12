@@ -1,0 +1,30 @@
+.card {
+    background: #090012;
+    border: 4px solid #160426;
+    transition: 0.3s ease;
+
+    &:hover {
+        border: 4px solid var(--mantine-color-violet-9);
+    }
+    &:hover > .icon {
+        opacity: 1
+    }
+}
+
+.title {
+    font-family: 'Greycliff CF', var(--mantine-font-family);
+    font-weight: bold;
+}
+
+.image {
+    border-radius: var(--mantine-radius-md);
+}
+
+.icon {
+    opacity: 0;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 99;
+    transition: 0.3s ease;
+}
