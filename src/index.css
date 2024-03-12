@@ -1,5 +1,7 @@
 :root {
+    /* Transition delay */
     --custom-transition-delay: 0.15s ease;
+    --custom-card-transition-delay: 0.35s ease;
     /* Dark theme */
     --custom-dark-header-background-color: #00000044;
     --custom-dark-header-backdrop-blur: blur(12px);
@@ -15,5 +17,6 @@
 }
 
 body {
+    overflow-x: hidden;
     background: #090012;
 }
