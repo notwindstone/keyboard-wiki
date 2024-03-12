@@ -97,24 +97,28 @@
         transform: translateX(-50%) scale(120%);
     }
     &:hover > .smallImage:nth-of-type(1) {
-        transform: rotate(22.5deg) translateX(-200%) scale(120%);
+        transform: rotate(15deg) translateX(-250%);
     }
     &:hover > .smallImage:nth-of-type(2) {
-        transform: scale(120%) translateX(-40%);
+        transform: rotate(-60deg) translateX(-125%);
     }
     &:hover > .smallImage:nth-of-type(3) {
-        transform: scale(120%) translateX(-40%);
+        transform: rotate(-15deg) translateX(175%);
     }
 }
 
-.bigImage {
+.bigImage, .smallImage {
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
-    height: 50%;
     position: absolute;
     border-radius: var(--mantine-radius-md);
     transition: var(--custom-card-transition-delay);
+    border: 1px solid black;
+}
+
+.bigImage {
+    width: 50%;
+    height: 50%;
 
     &:nth-of-type(4) {
         transform: rotate(5deg) translateX(-40%) translateY(5%);
@@ -126,11 +130,6 @@
 
 
 .smallImage {
-    left: 50%;
-    transform: translateX(-50%);
     width: 20%;
     height: 20%;
-    position: absolute;
-    border-radius: var(--mantine-radius-md);
-    transition: var(--custom-card-transition-delay);
 }
