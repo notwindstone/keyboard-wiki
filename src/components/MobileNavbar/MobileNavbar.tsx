@@ -4,7 +4,7 @@ import { IconKeyboard } from '@tabler/icons-react';
 import classes from './MobileNavbar.module.css';
 import ThemeChanger from "../ThemeChanger/ThemeChanger.tsx";
 
-export function MobileNavbar({ children }: any) {
+const MobileNavbar = ({ children }: any) => {
     const [opened, { toggle }] = useDisclosure();
 
     return (
@@ -43,3 +43,5 @@ export function MobileNavbar({ children }: any) {
         </AppShell>
     );
 }
+
+export default MobileNavbar

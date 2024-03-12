@@ -1,7 +1,7 @@
 import {Container, Group, Image, Text, Title} from '@mantine/core';
 import classes from './HeroBullets.module.css';
 
-export function HeroBullets() {
+const HeroBullets = () => {
     return (
         <div className={classes.wrapper}>
             <Container size={1400} className={classes.inner}>
@@ -35,3 +35,5 @@ export function HeroBullets() {
         </div>
     );
 }
+
+export default HeroBullets

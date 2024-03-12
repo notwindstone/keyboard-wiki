@@ -1,13 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
-import {MobileNavbar} from "../components/MobileNavbar/MobileNavbar.tsx";
-import {HeroBullets} from "../components/HeroBullets/HeroBullets.tsx";
-import {SegmentedControl} from "@mantine/core";
+import MobileNavbar from "../components/MobileNavbar/MobileNavbar.tsx";
+import HeroBullets from "../components/HeroBullets/HeroBullets.tsx";
+import ArticleSegment from "../components/ArticleSegment/ArticleSegment.tsx";
 
 const Index = () => {
     return (
         <MobileNavbar>
             <HeroBullets />
-            <SegmentedControl withItemsBorders={false} data={['React', 'Angular', 'Vue']} />
+            <ArticleSegment />
         </MobileNavbar>
     )
 }
