@@ -7,7 +7,7 @@ const HeroBullets = () => {
             <Container size={1400} className={classes.inner}>
                 <Group className={classes.group}>
                     <Title className={classes.title}>
-                        <Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit>
+                        <Text component="span" variant="gradient" gradient={{ from: 'violet', to: 'grape' }} inherit>
                             Документация
                         </Text>{' '}
                         по механическим клавиатурам

@@ -22,7 +22,7 @@ const MobileNavbar = ({ children }: any) => {
                             <UnstyledButton className={classes.control}>Документация</UnstyledButton>
                         </Group>
                         <Group>
-                            <ThemeIcon variant="gradient" size="lg">
+                            <ThemeIcon variant="gradient" gradient={{ from: 'violet', to: 'grape' }} size="lg">
                                 <IconKeyboard size={30} stroke={1.5} />
                             </ThemeIcon>
                             <Title className={classes.title}>HolyBoards</Title>
