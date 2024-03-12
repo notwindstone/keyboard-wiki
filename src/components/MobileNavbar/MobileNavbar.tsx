@@ -4,6 +4,7 @@ import { IconKeyboard } from '@tabler/icons-react';
 import classes from './MobileNavbar.module.css';
 import ThemeChanger from "../ThemeChanger/ThemeChanger.tsx";
 import {NavbarLinksGroup} from "../NavbarLinksGroup/NavbarLinksGroup.tsx";
+import {Link} from "@tanstack/react-router";
 
 const MobileNavbar = ({ children }: any) => {
     const [opened, { toggle }] = useDisclosure();
@@ -19,8 +20,8 @@ const MobileNavbar = ({ children }: any) => {
                     <Group justify="space-between" style={{ flex: 1 }}>
                         <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="md" />
                         <Group gap={0} visibleFrom="md">
-                            <UnstyledButton className={classes.control}>Главная</UnstyledButton>
-                            <UnstyledButton className={classes.control}>Документация</UnstyledButton>
+                            <UnstyledButton component={Link} to="/" className={classes.control}>Главная</UnstyledButton>
+                            <UnstyledButton component={Link} to="/articles" className={classes.control}>Статьи</UnstyledButton>
                         </Group>
                         <Group className={classes.titleBar}>
                             <ThemeIcon variant="gradient" gradient={{ from: 'violet', to: 'grape' }} size="lg">
