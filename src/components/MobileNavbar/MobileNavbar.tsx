@@ -21,7 +21,7 @@ const MobileNavbar = ({ children }: any) => {
                         <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="md" />
                         <Group gap={0} visibleFrom="md">
                             <UnstyledButton component={Link} to="/" className={classes.control}>Главная</UnstyledButton>
-                            <UnstyledButton component={Link} to="/articles" className={classes.control}>Статьи</UnstyledButton>
+                            <UnstyledButton component={Link} to="/articles" className={classes.control}>Гайд</UnstyledButton>
                         </Group>
                         <Group className={classes.titleBar}>
                             <ThemeIcon variant="gradient" gradient={{ from: 'violet', to: 'grape' }} size="lg">
