@@ -14,7 +14,10 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as IndexImport } from './routes/index'
 import { Route as ArticlesIndexImport } from './routes/articles/index'
 import { Route as ArticlesSwitchesIndexImport } from './routes/articles/switches/index'
+import { Route as ArticlesStabilizersIndexImport } from './routes/articles/stabilizers/index'
+import { Route as ArticlesKitsIndexImport } from './routes/articles/kits/index'
 import { Route as ArticlesKeycapsIndexImport } from './routes/articles/keycaps/index'
+import { Route as ArticlesIntroIndexImport } from './routes/articles/intro/index'
 import { Route as ArticlesSwitchesForceCurvesImport } from './routes/articles/switches/forceCurves'
 import { Route as ArticlesKeycapsMaterialImport } from './routes/articles/keycaps/material'
 
@@ -35,8 +38,23 @@ const ArticlesSwitchesIndexRoute = ArticlesSwitchesIndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
+const ArticlesStabilizersIndexRoute = ArticlesStabilizersIndexImport.update({
+  path: '/articles/stabilizers/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesKitsIndexRoute = ArticlesKitsIndexImport.update({
+  path: '/articles/kits/',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const ArticlesKeycapsIndexRoute = ArticlesKeycapsIndexImport.update({
   path: '/articles/keycaps/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesIntroIndexRoute = ArticlesIntroIndexImport.update({
+  path: '/articles/intro/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -71,8 +89,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArticlesSwitchesForceCurvesImport
       parentRoute: typeof rootRoute
     }
+    '/articles/intro/': {
+      preLoaderRoute: typeof ArticlesIntroIndexImport
+      parentRoute: typeof rootRoute
+    }
     '/articles/keycaps/': {
       preLoaderRoute: typeof ArticlesKeycapsIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/kits/': {
+      preLoaderRoute: typeof ArticlesKitsIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/stabilizers/': {
+      preLoaderRoute: typeof ArticlesStabilizersIndexImport
       parentRoute: typeof rootRoute
     }
     '/articles/switches/': {
@@ -89,7 +119,10 @@ export const routeTree = rootRoute.addChildren([
   ArticlesIndexRoute,
   ArticlesKeycapsMaterialRoute,
   ArticlesSwitchesForceCurvesRoute,
+  ArticlesIntroIndexRoute,
   ArticlesKeycapsIndexRoute,
+  ArticlesKitsIndexRoute,
+  ArticlesStabilizersIndexRoute,
   ArticlesSwitchesIndexRoute,
 ])
 

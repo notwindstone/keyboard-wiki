@@ -3,7 +3,7 @@ import {IconExternalLink} from "@tabler/icons-react";
 import classes from './ContentCard.module.css';
 import {Link} from "@tanstack/react-router";
 
-const ContentCard = (props: { card: any }) => {
+const ContentCard = (props: { card: object }) => {
     const { card } = props
 
     return (
