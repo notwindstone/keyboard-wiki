@@ -12,7 +12,8 @@ interface ContentCardProps {
 }
 
 const ContentCard = ({ title, imageURL, imageAlt, link, content }: ContentCardProps) => {
-    const cardContent = content.map((section, index, array) => {
+    const newContent = content ?? []
+    const cardContent = newContent.map((section, index, array) => {
         if (index + 1 === array.length) {
             return (
                 <>{section.title}</>

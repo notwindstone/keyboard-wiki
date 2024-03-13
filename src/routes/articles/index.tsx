@@ -6,6 +6,12 @@ import articles from '../../configs/articles.json'
 import classes from './index.module.css'
 
 const Articles = () => {
+    const subArticles = articles.map((article) => {
+        return (
+            <ArticleSegment articles={article.content} />
+        )
+    })
+
     const articleSections = articles.map((article) => {
         return (
             article.title
@@ -21,7 +27,7 @@ const Articles = () => {
                 label: classes.label,
                 indicator: classes.indicator
             }} withItemsBorders={false} color="light-dark(var(--mantine-color-violet-2), var(--mantine-color-violet-9))" data={articleSections} />
-            <ArticleSegment articles={articles} />
+            {subArticles}
         </MobileNavbar>
     )
 }

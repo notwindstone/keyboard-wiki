@@ -1,4 +1,3 @@
-
 import {Container, SimpleGrid} from "@mantine/core";
 import ContentCard from "../ContentCard/ContentCard.tsx";
 
