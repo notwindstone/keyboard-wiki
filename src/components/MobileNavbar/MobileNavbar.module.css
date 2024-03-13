@@ -13,7 +13,7 @@
 .header {
     background: light-dark(white, var(--custom-dark-header-background-color));
     backdrop-filter: var(--custom-dark-header-backdrop-blur);
-    border-bottom-color: var(--custom-dark-header-border-color);
+    border-bottom-color: var(--mantine-color-violet-light-hover);
 
     @media (max-width: $mantine-breakpoint-md) {
         background: light-dark(white, var(--custom-dark-header-mobile-background-color));

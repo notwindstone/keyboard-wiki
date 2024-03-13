@@ -14,6 +14,7 @@
     --custom-dark-theme-icon-color: #ffffff;
     --custom-dark-text-secondary-color: #878787;
     /* Light theme */
+    --custom-light-header-border-color: rgba(234, 204, 255, 0.53);
     --custom-light-theme-icon-color: #000000;
     --custom-light-text-secondary-color: #3f4344;
 }
