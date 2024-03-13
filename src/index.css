@@ -6,7 +6,6 @@
     --custom-dark-header-background-color: #00000044;
     --custom-dark-header-mobile-background-color: #100a18;
     --custom-dark-header-backdrop-blur: blur(12px);
-    --custom-dark-header-border-color: #34243c88;
     --custom-dark-sidebar-background-color: #00000066;
     --custom-dark-sidebar-mobile-background-color: #100a18;
     --custom-dark-sidebar-backdrop-blur: blur(12px);
@@ -14,7 +13,6 @@
     --custom-dark-theme-icon-color: #ffffff;
     --custom-dark-text-secondary-color: #878787;
     /* Light theme */
-    --custom-light-header-border-color: rgba(234, 204, 255, 0.53);
     --custom-light-theme-icon-color: #000000;
     --custom-light-text-secondary-color: #3f4344;
 }

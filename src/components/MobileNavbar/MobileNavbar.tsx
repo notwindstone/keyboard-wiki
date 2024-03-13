@@ -5,9 +5,20 @@ import classes from './MobileNavbar.module.css';
 import ThemeChanger from "../ThemeChanger/ThemeChanger.tsx";
 import NavbarLinksGroup from "../NavbarLinksGroup/NavbarLinksGroup.tsx";
 import {Link} from "@tanstack/react-router";
+import {useEffect} from "react";
 
 const MobileNavbar = ({ children }: any) => {
     const [opened, { toggle }] = useDisclosure();
+
+    useEffect(() => {
+        if (opened) {
+            document.body.style.overflowY = 'hidden'
+        }
+        else {
+            document.body.style.overflowY = 'scroll'
+        }
+        return () => {}
+    }, [opened])
 
     return (
         <AppShell
