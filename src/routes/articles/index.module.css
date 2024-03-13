@@ -27,3 +27,8 @@
         color: light-dark();
     }
 }
+
+.title {
+    text-align: center;
+    margin: var(--mantine-spacing-xl)
+}

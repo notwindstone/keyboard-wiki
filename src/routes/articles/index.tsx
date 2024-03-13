@@ -14,7 +14,7 @@ const Articles = () => {
 
     return (
         <MobileNavbar>
-            <Title>1234</Title>
+            <Title className={classes.title}>Сортировка статей</Title>
             <SegmentedControl classNames={{
                 root: classes.root,
                 control: classes.control,
