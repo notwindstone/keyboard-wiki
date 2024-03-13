@@ -7,10 +7,14 @@
     "content": [
       {
         "title": "Размеры",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/intro/sizes"
       },
       {
         "title": "Раскладки",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/intro/layouts"
       }
     ]
@@ -23,10 +27,14 @@
     "content": [
       {
         "title": "Плейты",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/kits/plates"
       },
       {
         "title": "Маунты",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/kits/mounts"
       }
     ]
@@ -39,14 +47,20 @@
     "content": [
       {
         "title": "Виды",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/switches/types"
       },
       {
         "title": "Анатомия",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/switches/anatomy"
       },
       {
         "title": "График силы нажатия",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/switches/forceCurves"
       }
     ]
@@ -59,10 +73,14 @@
     "content": [
       {
         "title": "Профили",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/keycaps/profiles"
       },
       {
         "title": "Материалы",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/keycaps/material"
       }
     ]
@@ -75,6 +93,8 @@
     "content": [
       {
         "title": "Виды",
+        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
+        "imageAlt": "ePBT Black White keycaps image",
         "link": "/articles/stabilizers/types"
       }
     ]

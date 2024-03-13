@@ -71,7 +71,7 @@ const LinksGroup = ({ title, navbarLink, initiallyOpened, content }: LinksGroupP
             break
         default:
             icon = (
-                <IconExternalLink style={iconStyle} />
+                <IconExternalLink />
             )
             break
     }
