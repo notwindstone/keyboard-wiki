@@ -1,11 +1,14 @@
-import { ScrollArea } from '@mantine/core';
+import {ScrollArea} from '@mantine/core';
 import LinksGroup from "../LinksGroup/LinksGroup.tsx";
 import articles from '../../configs/articles.json'
+import navigationLinks from '../../configs/navigationLinks.json'
 
 const NavbarLinksGroup = () => {
-    const linksGroups = articles.map((article) => {
+    const tableOfContent = navigationLinks.concat(articles)
+
+    const linksGroups = tableOfContent.map((paragraph) => {
         return (
-            <LinksGroup {...article} />
+            <LinksGroup {...paragraph} />
         )
     })
 
