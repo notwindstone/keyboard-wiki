@@ -1,7 +1,14 @@
 import {useState} from "react";
 import {Box, Collapse, Group, rem, ThemeIcon, UnstyledButton} from "@mantine/core";
 import classes from "../LinksGroup/LinksGroup.module.css";
-import {IconChevronRight, IconHome, IconNavigationBolt} from "@tabler/icons-react";
+import {
+    IconBook2,
+    IconChevronRight,
+    IconDirections,
+    IconExternalLink, IconFoldDown,
+    IconHome, IconKeyboard, IconMenu,
+    IconSquare
+} from "@tabler/icons-react";
 import {Link} from "@tanstack/react-router";
 
 interface LinksGroupProps {
@@ -24,13 +31,58 @@ const LinksGroup = ({ title, navbarLink, initiallyOpened, content }: LinksGroupP
         </Link>
     ));
 
+    let icon
+
+    switch (title) {
+        case "Главная":
+            icon = (
+                <IconHome />
+            )
+            break
+        case "Гайд":
+            icon = (
+                <IconBook2 />
+            )
+            break
+        case "Основы":
+            icon = (
+                <IconDirections />
+            )
+            break
+        case "Базы для клавиатур":
+            icon = (
+                <IconKeyboard />
+            )
+            break
+        case "Свитчи":
+            icon = (
+                <IconFoldDown />
+            )
+            break
+        case "Кейкапы":
+            icon = (
+                <IconSquare />
+            )
+            break
+        case "Стабилизаторы":
+            icon = (
+                <IconMenu />
+            )
+            break
+        default:
+            icon = (
+                <IconExternalLink style={iconStyle} />
+            )
+            break
+    }
+
     if (navbarLink) {
         return (
             <UnstyledButton component={Link} to={navbarLink} className={classes.control}>
                 <Group justify="space-between" gap={0}>
                     <Box style={{ display: 'flex', alignItems: 'center' }}>
-                        <ThemeIcon variant="light" color="violet" size={30}>
-                            <IconHome style={{ width: rem(18), height: rem(18) }} />
+                        <ThemeIcon variant="light" color="violet" size="xl">
+                            {icon}
                         </ThemeIcon>
                         <Box ml="md">{title}</Box>
                     </Box>
@@ -44,8 +96,8 @@ const LinksGroup = ({ title, navbarLink, initiallyOpened, content }: LinksGroupP
             <UnstyledButton onClick={() => setOpened((o) => !o)} className={classes.control}>
                 <Group justify="space-between" gap={0}>
                     <Box style={{ display: 'flex', alignItems: 'center' }}>
-                        <ThemeIcon variant="light" color="violet" size={30}>
-                            <IconNavigationBolt style={{ width: rem(18), height: rem(18) }} />
+                        <ThemeIcon variant="light" color="violet" size="xl">
+                            {icon}
                         </ThemeIcon>
                         <Box ml="md">{title}</Box>
                     </Box>
@@ -54,8 +106,8 @@ const LinksGroup = ({ title, navbarLink, initiallyOpened, content }: LinksGroupP
                             className={classes.chevron}
                             stroke={1.5}
                             style={{
-                                width: rem(16),
-                                height: rem(16),
+                                width: rem(24),
+                                height: rem(24),
                                 transform: opened ? 'rotate(-90deg)' : 'none',
                             }}
                         />

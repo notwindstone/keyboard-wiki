@@ -14,6 +14,11 @@
     background: light-dark(white, var(--custom-dark-header-background-color));
     backdrop-filter: var(--custom-dark-header-backdrop-blur);
     border-bottom-color: var(--custom-dark-header-border-color);
+
+    @media (max-width: $mantine-breakpoint-md) {
+        background: light-dark(white, var(--custom-dark-header-mobile-background-color));
+        backdrop-filter: none;
+    }
 }
 
 .main {
@@ -24,6 +29,11 @@
     background: light-dark(white, var(--custom-dark-sidebar-background-color));
     backdrop-filter: var(--custom-dark-sidebar-backdrop-blur);
     border-right: none;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        background: light-dark(white, var(--custom-dark-sidebar-mobile-background-color));
+        backdrop-filter: none;
+    }
 }
 
 .titleBar {
