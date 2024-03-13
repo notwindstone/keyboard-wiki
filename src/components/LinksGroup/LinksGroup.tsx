@@ -1,28 +1,26 @@
 import {useState} from "react";
-import {Box, Collapse, Group, rem, Text, ThemeIcon, UnstyledButton} from "@mantine/core";
+import {Box, Collapse, Group, rem, ThemeIcon, UnstyledButton} from "@mantine/core";
 import classes from "../NavbarLinksGroup/NavbarLinksGroup.module.css";
-import {IconChevronRight} from "@tabler/icons-react";
+import {IconChevronRight, IconNavigationBolt} from "@tabler/icons-react";
+import {Link} from "@tanstack/react-router";
 
 interface LinksGroupProps {
-    icon: React.FC<any>;
-    label: string;
+    title: string;
     initiallyOpened?: boolean;
-    links?: { label: string; link: string }[];
+    content?: { title: string; link: string }[];
 }
 
-const LinksGroup = ({ icon: Icon, label, initiallyOpened, links }: LinksGroupProps) => {
-    const hasLinks = Array.isArray(links);
+const LinksGroup = ({ title, initiallyOpened, content }: LinksGroupProps) => {
+    const hasLinks = Array.isArray(content);
     const [opened, setOpened] = useState(initiallyOpened || false);
-    const items = (hasLinks ? links : []).map((link) => (
-        <Text<'a'>
-            component="a"
+    const items = (hasLinks ? content : []).map((link) => (
+        <Link
             className={classes.link}
-            href={link.link}
-            key={link.label}
-            onClick={(event) => event.preventDefault()}
+            to={link.link}
+            key={link.title}
         >
-            {link.label}
-        </Text>
+            {link.title}
+        </Link>
     ));
 
     return (
@@ -31,9 +29,9 @@ const LinksGroup = ({ icon: Icon, label, initiallyOpened, links }: LinksGroupPro
                 <Group justify="space-between" gap={0}>
                     <Box style={{ display: 'flex', alignItems: 'center' }}>
                         <ThemeIcon variant="light" color="violet" size={30}>
-                            <Icon style={{ width: rem(18), height: rem(18) }} />
+                            <IconNavigationBolt style={{ width: rem(18), height: rem(18) }} />
                         </ThemeIcon>
-                        <Box ml="md">{label}</Box>
+                        <Box ml="md">{title}</Box>
                     </Box>
                     {hasLinks && (
                         <IconChevronRight
