@@ -5,7 +5,7 @@ import ContentCard from "../ContentCard/ContentCard.tsx";
 
 const ArticleSegment = () => {
     const cards = articles.map((article) => (
-        <ContentCard card={article} />
+        <ContentCard {...article} />
     ));
 
 
