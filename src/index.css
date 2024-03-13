@@ -1,25 +1,28 @@
 :root {
+    /* Base theme */
+    --custom-header-backdrop-blur: blur(12px);
+    --custom-sidebar-backdrop-blur: blur(12px);
     /* Transition delay */
     --custom-transition-delay: 0.15s ease;
     --custom-card-transition-delay: 0.35s ease;
     /* Dark theme */
     --custom-dark-header-background-color: #00000044;
     --custom-dark-header-mobile-background-color: #100a18;
-    --custom-dark-header-backdrop-blur: blur(12px);
     --custom-dark-sidebar-background-color: #00000066;
     --custom-dark-sidebar-mobile-background-color: #100a18;
-    --custom-dark-sidebar-backdrop-blur: blur(12px);
     --custom-dark-main-background-color: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(145, 119, 198, 0.3), #00000000);
     --custom-dark-theme-icon-color: #ffffff;
     --custom-dark-text-secondary-color: #878787;
     /* Light theme */
+    --custom-light-header-background-color: #ffffff44;
+    --custom-light-main-background-color: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(87, 0, 255, 0.3), #00000000);
     --custom-light-theme-icon-color: #000000;
     --custom-light-text-secondary-color: #3f4344;
 }
 
 body {
     overflow-x: hidden;
-    background-color: #090012;
+    background-color: light-dark(#ffffff, #090012);
     background-size: 400px;
-    background-image: url("https://assets-global.website-files.com/639997ad49dddb11d0c0efba/639a05a5c0944b02ab3529dd_grid.svg")
+    background-image: light-dark(none, url("https://assets-global.website-files.com/639997ad49dddb11d0c0efba/639a05a5c0944b02ab3529dd_grid.svg"));
 }

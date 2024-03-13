@@ -11,8 +11,8 @@
 }
 
 .header {
-    background: light-dark(white, var(--custom-dark-header-background-color));
-    backdrop-filter: var(--custom-dark-header-backdrop-blur);
+    background: light-dark(var(--custom-light-header-background-color), var(--custom-dark-header-background-color));
+    backdrop-filter: var(--custom-header-backdrop-blur);
     border-bottom-color: var(--mantine-color-violet-light-hover);
 
     @media (max-width: $mantine-breakpoint-md) {
@@ -22,12 +22,12 @@
 }
 
 .main {
-    background: light-dark(white, var(--custom-dark-main-background-color))
+    background: light-dark(var(--custom-light-main-background-color), var(--custom-dark-main-background-color))
 }
 
 .sidebar {
     background: light-dark(white, var(--custom-dark-sidebar-background-color));
-    backdrop-filter: var(--custom-dark-sidebar-backdrop-blur);
+    backdrop-filter: var(--custom-sidebar-backdrop-blur);
     border-right: none;
 
     @media (max-width: $mantine-breakpoint-md) {

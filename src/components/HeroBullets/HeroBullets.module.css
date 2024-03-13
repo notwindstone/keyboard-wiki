@@ -97,13 +97,13 @@
         transform: translateX(-50%) scale(120%);
     }
     &:hover > .smallImage:nth-of-type(1) {
-        transform: rotate(15deg) translateX(-250%);
+        transform: rotate(-30deg) translateX(-100%) translateY(-300%);
     }
     &:hover > .smallImage:nth-of-type(2) {
-        transform: rotate(-60deg) translateX(-125%);
+        transform: rotate(60deg) translateX(100%) translateY(-300%);
     }
     &:hover > .smallImage:nth-of-type(3) {
-        transform: rotate(-15deg) translateX(175%);
+        transform: rotate(-45deg) translateX(-200%) translateY(0%);
     }
 }
 
@@ -132,4 +132,5 @@
 .smallImage {
     width: 20%;
     height: 20%;
+
 }
