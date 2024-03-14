@@ -47,21 +47,33 @@
     "content": [
       {
         "title": "Виды",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://hippokeys.com/cdn/shop/products/image_568f65b1-f4e5-4e40-905c-4149b1a52823.jpg?v=1655690788&width=4032",
+        "imageAlt": "Random switches image",
         "link": "/articles/switches/types"
       },
       {
         "title": "Анатомия",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://i.redd.it/8veqm2cv85l51.jpg",
+        "imageAlt": "Glorious Panda switch disassemble image",
         "link": "/articles/switches/anatomy"
       },
       {
+        "title": "Разновидности пружин",
+        "imageURL": "https://www.keebtalk.com/uploads/db8059/original/2X/f/f4196118df9973356d923047339dc5c10d5d6177.jpeg",
+        "imageAlt": "Different switch springs image",
+        "link": "/articles/switches/springs"
+      },
+      {
         "title": "График силы нажатия",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://chart-studio.plotly.com/~haata/508/novelkeys-box-royal.png",
+        "imageAlt": "NovelKeys Box Royal switch force curve",
         "link": "/articles/switches/forceCurves"
+      },
+      {
+        "title": "Материалы",
+        "imageURL": "https://preview.redd.it/qp5p6yc3n4c91.png?width=1600&format=png&auto=webp&s=f75f49cfeb2e5acb14bfd848bdea88d0376af9cc",
+        "imageAlt": "Different switch material image",
+        "link": "/articles/switches/material"
       }
     ]
   },
