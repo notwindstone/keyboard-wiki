@@ -28,13 +28,13 @@
       {
         "title": "Плейты",
         "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageAlt": "ePBT Black White keycaps",
         "link": "/articles/kits/plates"
       },
       {
         "title": "Маунты",
         "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageAlt": "ePBT Black White keycaps",
         "link": "/articles/kits/mounts"
       }
     ]
@@ -42,29 +42,23 @@
   {
     "title": "Свитчи",
     "imageURL": "https://cdn.shopify.com/s/files/1/1679/2319/files/DSC08448_1024x1024.jpg?v=1597791918",
-    "imageAlt": "C3Equalz Kiwi switches image",
+    "imageAlt": "C3Equalz Kiwi switches",
     "link": "/articles/switches",
     "content": [
       {
         "title": "Виды",
         "imageURL": "https://hippokeys.com/cdn/shop/products/image_568f65b1-f4e5-4e40-905c-4149b1a52823.jpg?v=1655690788&width=4032",
-        "imageAlt": "Random switches image",
+        "imageAlt": "Random switches",
         "link": "/articles/switches/types"
       },
       {
         "title": "Анатомия",
         "imageURL": "https://i.redd.it/8veqm2cv85l51.jpg",
-        "imageAlt": "Glorious Panda switch disassemble image",
+        "imageAlt": "Glorious Panda switch disassemble",
         "link": "/articles/switches/anatomy"
       },
       {
-        "title": "Разновидности пружин",
-        "imageURL": "https://www.keebtalk.com/uploads/db8059/original/2X/f/f4196118df9973356d923047339dc5c10d5d6177.jpeg",
-        "imageAlt": "Different switch springs image",
-        "link": "/articles/switches/springs"
-      },
-      {
-        "title": "График силы нажатия",
+        "title": "Графики силы нажатия",
         "imageURL": "https://chart-studio.plotly.com/~haata/508/novelkeys-box-royal.png",
         "imageAlt": "NovelKeys Box Royal switch force curve",
         "link": "/articles/switches/forceCurves"
@@ -72,8 +66,32 @@
       {
         "title": "Материалы",
         "imageURL": "https://preview.redd.it/qp5p6yc3n4c91.png?width=1600&format=png&auto=webp&s=f75f49cfeb2e5acb14bfd848bdea88d0376af9cc",
-        "imageAlt": "Different switch material image",
+        "imageAlt": "Different switch material",
         "link": "/articles/switches/material"
+      },
+      {
+        "title": "Звук",
+        "imageURL": "https://www.rtings.com/assets/pages/zgjmVXMV/smoothness-audio-analysis-large.jpg",
+        "imageAlt": "Switch sound analysis",
+        "link": "/articles/switches/sound"
+      },
+      {
+        "title": "Модификация",
+        "imageURL": "https://www.keebtalk.com/uploads/db8059/original/2X/f/f4196118df9973356d923047339dc5c10d5d6177.jpeg",
+        "imageAlt": "Different switch springs",
+        "link": "/articles/switches/modifications"
+      },
+      {
+        "title": "Франкенсвитчи",
+        "imageURL": "https://マリウス.com/frankenswitch-the-poor-mans-soju-switch/images/IMG_2002_hue37e301dbed72e3f2a412390492cb38b_5983363_1440x0_resize_q75_box.jpg",
+        "imageAlt": "Poor-Man's Soju frankenswitch",
+        "link": "/articles/switches/frankenswitches"
+      },
+      {
+        "title": "Задержки",
+        "imageURL": "https://www.rtings.com/assets/pages/zgjmVXMV/latency-scope-press-large.jpg",
+        "imageAlt": "Switch latency measurement",
+        "link": "/articles/switches/latency"
       }
     ]
   },
