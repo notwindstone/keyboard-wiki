@@ -1,13 +1,13 @@
 import {Container, SimpleGrid} from "@mantine/core";
 import ContentCard from "../ContentCard/ContentCard.tsx";
 
-const ArticleSegment = ({ articles }: any) => {
+const ArticleSegment = ({ articles, style }: any) => {
     const cards = articles.map((article) => (
         <ContentCard {...article} />
     ));
 
     return (
-        <div>
+        <div style={style}>
             <Container size={1400}>
                 <SimpleGrid cols={{ base: 1, sm: 2 }}>
                     {cards}

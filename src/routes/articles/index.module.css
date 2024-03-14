@@ -44,3 +44,7 @@
         line-height: 1.2;
     }
 }
+
+.articleSegment {
+    margin-bottom: var(--mantine-spacing-md);
+}

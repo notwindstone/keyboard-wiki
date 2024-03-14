@@ -12,7 +12,7 @@ const Articles = () => {
 
     const subArticles = articles.map((article) => {
         return (
-            <ArticleSegment key={article.title} articles={article.content} />
+            <ArticleSegment style={{marginBottom: '1rem'}} key={article.title} articles={article.content} />
         )
     })
 
