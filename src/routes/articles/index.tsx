@@ -7,11 +7,12 @@ import classes from './index.module.css'
 import {useState} from "react";
 
 const Articles = () => {
+    let currentArticleSection
     const [value, setValue] = useState('react')
 
     const subArticles = articles.map((article) => {
         return (
-            <ArticleSegment articles={article.content} />
+            <ArticleSegment key={article.title} articles={article.content} />
         )
     })
 
@@ -20,6 +21,13 @@ const Articles = () => {
             article.title
         )
     })
+
+    subArticles.forEach((articles) => {
+        if (articles.key === value) {
+            currentArticleSection = articles
+        }
+    })
+
     return (
         <MobileNavbar>
             <Title className={classes.title}>Сортировка статей</Title>
@@ -34,7 +42,7 @@ const Articles = () => {
                               value={value}
                               onChange={setValue}
                               data={articleSections} />
-            {subArticles}
+            {currentArticleSection ?? subArticles}
         </MobileNavbar>
     )
 }
