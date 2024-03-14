@@ -1,19 +1,13 @@
 import {Container, Title} from "@mantine/core";
-import {Link} from "@tanstack/react-router";
 import NavigationButtons from "../NavigationButtons/NavigationButtons.tsx";
+import classes from './ArticleContent.module.css'
 
 const ArticleContent = ({ content }: any) => {
-    const linkToNextPage = "/"
-    const linkToPreviousPage = "/"
-    const nextPage = "Франкенсвитчи"
-    const previousPage = "Виды"
-
     return (
         <div>
             <Container size={1400}>
-                <Link to="/">Вернуться</Link>
-                <Title></Title>
-                <NavigationButtons nextPage={nextPage} previousPage={previousPage} linkToNextPage={linkToNextPage} linkToPreviousPage={linkToPreviousPage} />
+                <Title className={classes.title}>{content.title}</Title>
+                <NavigationButtons nextPage={content.nextPage} previousPage={content.previousPage} linkToNextPage={content.linkToNextPage} linkToPreviousPage={content.linkToPreviousPage} />
             </Container>
         </div>
     )

@@ -1,11 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
 import MobileNavbar from "../../../components/MobileNavbar/MobileNavbar.tsx";
 import ArticleContent from "../../../components/ArticleContent/ArticleContent.tsx";
+import content from '../../../configs/switches/forceCurves.json'
 
 const SwitchForceCurves = () => {
     return (
         <MobileNavbar>
-            <ArticleContent content="1234" />
+            <ArticleContent content={content} />
         </MobileNavbar>
     )
 }
