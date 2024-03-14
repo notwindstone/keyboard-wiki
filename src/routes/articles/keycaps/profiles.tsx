@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import MobileNavbar from "../../../components/MobileNavbar/MobileNavbar.tsx";
 
-const KeycapsMaterial = () => {
+const KeycapsProfiles = () => {
     return (
         <MobileNavbar>
             <></>
@@ -9,6 +9,6 @@ const KeycapsMaterial = () => {
     )
 }
 
-export const Route = createFileRoute('/articles/keycaps/material')({
-    component: KeycapsMaterial
+export const Route = createFileRoute('/articles/keycaps/profiles')({
+    component: KeycapsProfiles
 })
