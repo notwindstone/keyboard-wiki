@@ -6,7 +6,6 @@ import content from '../../../configs/intro/layouts.json'
 const IntroLayouts = () => {
     return (
         <MobileNavbar>
-            <ArticleContent content={content} />
         </MobileNavbar>
     )
 }
