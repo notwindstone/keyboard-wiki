@@ -1,8 +1,22 @@
 import {Box, Container, Image, Text, Title} from "@mantine/core";
 import NavigationButtons from "../NavigationButtons/NavigationButtons.tsx";
 import classes from './ArticleContent.module.css'
+import {ReactNode} from "react";
 
-const ArticleContent = ({ title, briefImage, briefText, pages, children }: any) => {
+interface ArticleContentProps {
+    title: string,
+    briefImage: string,
+    briefText: string[],
+    pages: {
+        nextPage: string,
+        previousPage: string,
+        linkToNextPage: string,
+        linkToPreviousPage: string,
+    },
+    children: ReactNode
+}
+
+const ArticleContent = ({ title, briefImage, briefText, pages, children }: ArticleContentProps) => {
     const styledBriefText = briefText.map((item: string) => {
         return (
             <Text size="lg" pt="xs">{item}</Text>
