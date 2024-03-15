@@ -12,6 +12,7 @@
   "dependencies": {
     "@mantine/core": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
+    "@mdx-js/rollup": "^3.0.1",
     "@tabler/icons-react": "^3.0.0",
     "@tanstack/react-router": "^1.19.4",
     "@tanstack/router-devtools": "^1.19.4",

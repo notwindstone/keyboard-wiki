@@ -1,8 +1,15 @@
 import {Box, Container, Group, Image, Text, Title} from "@mantine/core";
 import NavigationButtons from "../NavigationButtons/NavigationButtons.tsx";
 import classes from './ArticleContent.module.css'
+import Markdown from "react-markdown";
 
-const ArticleContent = ({ content }: any) => {
+const ArticleContent = ({ children }: any) => {
+    return (
+        <>
+            {children}
+        </>
+    )
+
     /*
     const briefText = content.pageContent.map((section) => {
         return (
