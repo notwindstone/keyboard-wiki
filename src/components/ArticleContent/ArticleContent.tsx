@@ -9,7 +9,7 @@ const ArticleContent = ({ content }: any) => {
         )
     })
 
-    const test = content.pageContent.map((section) => {
+    const pageContent = content.pageContent.map((section) => {
         return (
             <>
                 <Title>{section.label}</Title>
@@ -46,6 +46,7 @@ const ArticleContent = ({ content }: any) => {
                         {briefText}
                     </Box>
                 </Container>
+                {pageContent}
                 <NavigationButtons
                     nextPage={content.nav.nextPage}
                     previousPage={content.nav.previousPage}
