@@ -16,7 +16,7 @@
 }
 
 .briefContainer {
-    margin-top: var(--mantine-spacing-md);
+    margin: var(--mantine-spacing-xl) auto;
     width: 100%;
     height: rem(512px);
     position: relative;
