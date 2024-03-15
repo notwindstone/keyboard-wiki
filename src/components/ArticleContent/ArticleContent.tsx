@@ -3,6 +3,7 @@ import NavigationButtons from "../NavigationButtons/NavigationButtons.tsx";
 import classes from './ArticleContent.module.css'
 
 const ArticleContent = ({ content }: any) => {
+    /*
     const briefText = content.pageContent.map((section) => {
         return (
             <Text size="lg" pt="xs">{section.label}</Text>
@@ -56,6 +57,7 @@ const ArticleContent = ({ content }: any) => {
             </Container>
         </div>
     )
+     */
 }
 
 export default ArticleContent
