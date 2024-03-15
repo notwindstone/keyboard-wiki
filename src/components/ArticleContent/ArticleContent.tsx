@@ -3,11 +3,23 @@ import NavigationButtons from "../NavigationButtons/NavigationButtons.tsx";
 import classes from './ArticleContent.module.css'
 import Markdown from "react-markdown";
 
-const ArticleContent = ({ children }: any) => {
+const ArticleContent = ({ title, briefImage, briefText, children }: any) => {
+
+
     return (
-        <>
+        <Container size={1400}>
+            <Title className={classes.title}>{title}</Title>
+            <Container size={1400} className={classes.briefContainer}>
+                <Image
+                    className={classes.briefImage}
+                    src={briefImage} />
+                <Box p="xl" className={classes.briefBox}>
+                    <Title className={classes.subtitle}>О чём глава</Title>
+                    {briefText}
+                </Box>
+            </Container>
             {children}
-        </>
+        </Container>
     )
 
     /*
