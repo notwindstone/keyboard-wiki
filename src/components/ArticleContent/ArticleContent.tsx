@@ -1,10 +1,13 @@
-import {Box, Container, Group, Image, Text, Title} from "@mantine/core";
+import {Box, Container, Image, Text, Title} from "@mantine/core";
 import NavigationButtons from "../NavigationButtons/NavigationButtons.tsx";
 import classes from './ArticleContent.module.css'
-import Markdown from "react-markdown";
 
-const ArticleContent = ({ title, briefImage, briefText, children }: any) => {
-
+const ArticleContent = ({ title, briefImage, briefText, pages, children }: any) => {
+    const styledBriefText = briefText.map((item: string) => {
+        return (
+            <Text size="lg" pt="xs">{item}</Text>
+        )
+    })
 
     return (
         <Container size={1400}>
@@ -15,10 +18,16 @@ const ArticleContent = ({ title, briefImage, briefText, children }: any) => {
                     src={briefImage} />
                 <Box p="xl" className={classes.briefBox}>
                     <Title className={classes.subtitle}>О чём глава</Title>
-                    {briefText}
+                    {styledBriefText}
                 </Box>
             </Container>
             {children}
+            <NavigationButtons
+                nextPage={pages.nextPage}
+                previousPage={pages.previousPage}
+                linkToNextPage={pages.linkToNextPage}
+                linkToPreviousPage={pages.linkToPreviousPage}
+            />
         </Container>
     )
 
