@@ -14,3 +14,33 @@
         line-height: 1.2;
     }
 }
+
+.briefContainer {
+    margin-top: var(--mantine-spacing-md);
+    width: 100%;
+    height: rem(512px);
+    position: relative;
+}
+
+.briefImage {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 60%;
+    border-radius: var(--mantine-radius-md);
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 90%;
+    }
+}
+
+.briefBox {
+    position: absolute;
+    color: #ffffff;
+    background: #090012;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 80%;
+    border-radius: var(--mantine-radius-md);
+}
