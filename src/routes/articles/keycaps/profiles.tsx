@@ -11,17 +11,17 @@ const KeycapsProfiles = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Материалы",
+        "previousPage": "Гайд",
+        "linkToNextPage": "/articles/keycaps/material",
+        "linkToPreviousPage": "/articles"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Профили"
+                briefImage="https://thekey.company/cdn/shop/files/EPBTOrangeonBlackHero-1_1200x1200.jpg?v=1685544822"
                 briefText={briefText}
                 pages={pages}
             >

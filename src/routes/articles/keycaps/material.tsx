@@ -11,17 +11,17 @@ const KeycapsMaterial = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Гайд",
+        "previousPage": "Профили",
+        "linkToNextPage": "/articles",
+        "linkToPreviousPage": "/articles/keycaps/profiles"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Материалы"
+                briefImage="https://cdn.shopify.com/s/files/1/0557/8961/7291/files/p1_b0153594-e778-4429-bb08-adc0abb5570e.jpg?v=1705392591"
                 briefText={briefText}
                 pages={pages}
             >
