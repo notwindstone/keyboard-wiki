@@ -15,14 +15,6 @@
     }
 }
 
-h1, h2, h3 {
-    font-family:
-            Greycliff CF,
-            var(--mantine-font-family);
-    font-weight: 900;
-    line-height: 1.1;
-}
-
 .briefContainer {
     margin: var(--mantine-spacing-xl) auto;
     width: 100%;
@@ -50,5 +42,17 @@ h1, h2, h3 {
     bottom: 0;
     width: 50%;
     height: 80%;
+    border-radius: var(--mantine-radius-md);
+}
+
+h1, h2, h3 {
+    font-family:
+            Greycliff CF,
+            var(--mantine-font-family);
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+img {
     border-radius: var(--mantine-radius-md);
 }
