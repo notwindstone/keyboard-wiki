@@ -7,14 +7,14 @@
     "content": [
       {
         "title": "Размеры",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://prototypist.net/cdn/shop/products/QQ_20230224172533_9eabe43a-5f67-4e90-afa1-2754f3a10613_1445x.jpg?v=1677252654",
+        "imageAlt": "Meletrix Zoom75, 75 percent keyboard",
         "link": "/articles/intro/sizes"
       },
       {
         "title": "Раскладки",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://www.pcworld.com/wp-content/uploads/2023/04/keychronq8alicekeyboardcustommechanicalkeyboardqmkvia8-1658304800042.jpg?quality=50&strip=all",
+        "imageAlt": "Alice layout",
         "link": "/articles/intro/layouts"
       }
     ]
@@ -28,13 +28,13 @@
       {
         "title": "Плейты",
         "imageURL": "https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879206539-Q8BU1BX5PLA2DJJO9OWN/candybar-keyboard_plates.png",
-        "imageAlt": "ePBT Black White keycaps",
+        "imageAlt": "Different plates",
         "link": "/articles/kits/plates"
       },
       {
         "title": "Маунты",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps",
+        "imageURL": "https://media.karousell.com/media/photos/products/2021/7/21/gasket_mount_60_custom_mechani_1626858962_dbd70787.jpg",
+        "imageAlt": "Gasket mount",
         "link": "/articles/kits/mounts"
       }
     ]
@@ -103,14 +103,14 @@
     "content": [
       {
         "title": "Профили",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://switchandclick.com/wp-content/uploads/2021/02/IMG_7752-1024x683-2-2.jpg",
+        "imageAlt": "Different keycaps profiles",
         "link": "/articles/keycaps/profiles"
       },
       {
         "title": "Материалы",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://cdn.shopify.com/s/files/1/0634/3370/3645/files/pomj_blog_content.jpg?v=1676493863",
+        "imageAlt": "POM keycaps I believe",
         "link": "/articles/keycaps/material"
       }
     ]
@@ -123,8 +123,8 @@
     "content": [
       {
         "title": "Виды",
-        "imageURL": "https://pkkeyboards.com/cdn/shop/products/epbtblackwhiteabsdoubleshotthickness.jpg?v=1651026662&width=1123",
-        "imageAlt": "ePBT Black White keycaps image",
+        "imageURL": "https://res.cloudinary.com/kineticlabs/image/upload/q_auto/c_fit,w_800/f_auto/v1/api-images/products/gateron-ink-v2-stabilizers-screw-in/DSC06638_h6aqyp",
+        "imageAlt": "Gateron Ink V2 screw-in pcb mount stabilizers",
         "link": "/articles/stabilizers/types"
       }
     ]
