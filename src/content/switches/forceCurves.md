@@ -10,10 +10,13 @@
 
 Для начала посмотрим на некоторые обзоры/отзывы на свитчи.
 
-- “Imo bobas are comically tactile while the baby kangaroos have that perfect amount of tactile and 'smoothness'. I've tried a lot of the 'god' non Frankenstein tactile switches and the BBK are my favorite out of all of them”
-- “The sound and feel on Gazzew Boba U4T are better than I could have honestly imagined. I didn't think they would be this MUCH better than my current Kiwi's. After watching/reading reviews and comments about them, I had to give them a try. These Gazzew Boba U4T's did not let me down”
-- “Outemu Ice Purple has a strong middle bump and putting the Purple Stem in Boba housing is a nice Frankenswitch. The Boba is just a superior housing than the Ice in every way but share a similar tactile leaf”
-- “I have both Holy Yok Pandas and NK Blueberries. Let me tell you these blueberry switches are wayy more tactile than holy pandas”
+`- “Imo bobas are comically tactile while the baby kangaroos have that perfect amount of tactile and 'smoothness'. I've tried a lot of the 'god' non Frankenstein tactile switches and the BBK are my favorite out of all of them”`
+
+`- “The sound and feel on Gazzew Boba U4T are better than I could have honestly imagined. I didn't think they would be this MUCH better than my current Kiwi's. After watching/reading reviews and comments about them, I had to give them a try. These Gazzew Boba U4T's did not let me down”`
+
+`- “Outemu Ice Purple has a strong middle bump and putting the Purple Stem in Boba housing is a nice Frankenswitch. The Boba is just a superior housing than the Ice in every way but share a similar tactile leaf”`
+
+`- “I have both Holy Yok Pandas and NK Blueberries. Let me tell you these blueberry switches are wayy more tactile than holy pandas”`
 
 Поскольку у каждого человека свои собственные предпочтения в плане тактильных ощущений от свитча, то такие отзывы или обзоры не дают никакой нормальной информации о том, чего ожидать от свитча. Конечно, некоторые пишут не только о том, что свитчи ощущаются очень круто, а также могут отметить “strong middle bump” или “mushy at the bottom”. Таким образом реально можно больше узнать о том, чего ожидать от свитча, но даже такие описания могут разниться от одного человека к другому банально из-за того, что кто-то использовал ещё более тактильные свитчи, к примеру, Kailh Box Royal или NK Blueberries, поэтому для него “strong middle bump” в Outemu Ice Purple будет ощущаться как “light middle bump”.
 
