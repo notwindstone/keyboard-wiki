@@ -20,6 +20,10 @@
     width: 100%;
     height: rem(512px);
     position: relative;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        height: rem(640px);
+    }
 }
 
 .briefImage {
