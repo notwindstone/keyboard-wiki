@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import MobileNavbar from "../../../components/MobileNavbar/MobileNavbar.tsx";
 import ArticleContent from "../../../components/ArticleContent/ArticleContent.tsx";
-import BlogPost from '../../../content/switches/forceCurves.md'
+import ForceCurvesPost from '../../../content/switches/forceCurves.md'
 
 const SwitchForceCurves = () => {
     const briefText = [
@@ -28,7 +28,7 @@ const SwitchForceCurves = () => {
                 briefText={briefText}
                 pages={pages}
             >
-                <BlogPost />
+                <ForceCurvesPost />
             </ArticleContent>
         </MobileNavbar>
     )
