@@ -43,6 +43,10 @@
     width: 50%;
     height: 80%;
     border-radius: var(--mantine-radius-md);
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 80%;
+    }
 }
 
 h1, h2, h3 {
@@ -54,5 +58,6 @@ h1, h2, h3 {
 }
 
 img {
+    max-width: 100%;
     border-radius: var(--mantine-radius-md);
 }
