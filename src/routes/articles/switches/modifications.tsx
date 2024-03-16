@@ -21,7 +21,7 @@ const SwitchModifications = () => {
         <MobileNavbar>
             <ArticleContent
                 title="Модификация"
-                briefImage="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/213300113/original/f178cc7fe3f78953dfec0060e250ebee9cd978f2/lube-your-mechanical-switches.png"
+                briefImage="https://www.keebtalk.com/uploads/db8059/original/2X/f/f4196118df9973356d923047339dc5c10d5d6177.jpeg"
                 briefText={briefText}
                 pages={pages}
             >
