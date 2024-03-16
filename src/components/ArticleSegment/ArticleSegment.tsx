@@ -1,7 +1,25 @@
-import {Container, SimpleGrid} from "@mantine/core";
+import {Container, CSSProperties, SimpleGrid} from "@mantine/core";
 import ContentCard from "../ContentCard/ContentCard.tsx";
 
-const ArticleSegment = ({ articles, style }: any) => {
+interface ArticleSegmentProps {
+    articles?: {
+        title:    string;
+        imageURL: string;
+        imageAlt: string;
+        link:     string;
+        content?: {
+            title: string;
+            imageURL: string;
+            imageAlt: string;
+            link: string;
+        }[]
+    }[],
+    style?: CSSProperties
+}
+
+const ArticleSegment = ({ articles, style }: ArticleSegmentProps) => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const cards = articles.map((article) => (
         <ContentCard {...article} />
     ));

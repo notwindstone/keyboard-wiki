@@ -8,7 +8,7 @@ interface ContentCardProps {
     imageURL: string;
     imageAlt: string;
     link: string;
-    content: { title: string; link: string }[];
+    content?: { title: string; link: string }[];
 }
 
 const ContentCard = ({ title, imageURL, imageAlt, link, content }: ContentCardProps) => {

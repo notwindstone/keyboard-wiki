@@ -4,6 +4,8 @@ import articles from '../../configs/articles.json'
 import navigationLinks from '../../configs/navigationLinks.json'
 
 const NavbarLinksGroup = () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const tableOfContent = navigationLinks.concat(articles)
 
     const linksGroups = tableOfContent.map((paragraph) => {
