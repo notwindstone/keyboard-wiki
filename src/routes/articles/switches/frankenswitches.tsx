@@ -11,17 +11,17 @@ const SwitchFrankenswitch = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Задержки",
+        "previousPage": "Модификация",
+        "linkToNextPage": "/articles/switches/latency",
+        "linkToPreviousPage": "/articles/switches/modifications"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Франкенсвитчи"
+                briefImage="https://www.keebtalk.com/uploads/db8059/original/3X/6/1/61c81c7b4ae2eb95d74fcf81466826711d2165f3.jpeg"
                 briefText={briefText}
                 pages={pages}
             >

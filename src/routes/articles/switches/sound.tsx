@@ -11,21 +11,21 @@ const SwitchSound = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Модификация",
+        "previousPage": "Материалы",
+        "linkToNextPage": "/articles/switches/modifications",
+        "linkToPreviousPage": "/articles/switches/material"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Звук"
+                briefImage="https://res.cloudinary.com/kineticlabs/image/upload/q_auto/c_fit,w_1000/f_auto/v1/api-images/blog/4-5-23-what-is-thock/hippo-keycaps_zi7cwz"
                 briefText={briefText}
                 pages={pages}
             >
-            <SoundPost />
+                <SoundPost />
         </ArticleContent>
 </MobileNavbar>
 )

@@ -11,21 +11,21 @@ const SwitchTypes = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Анатомия",
+        "previousPage": "Гайд",
+        "linkToNextPage": "/articles/switches/anatomy",
+        "linkToPreviousPage": "/articles"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Виды"
+                briefImage="https://keychron.in/wp-content/uploads/2021/06/pf-e4418b41-CherryMXSwitches-Edited.jpg"
                 briefText={briefText}
                 pages={pages}
             >
-            <TypesPost />
+                <TypesPost />
         </ArticleContent>
 </MobileNavbar>
 )

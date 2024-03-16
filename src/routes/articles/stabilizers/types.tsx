@@ -11,17 +11,17 @@ const StabilizerTypes = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Гайд",
+        "previousPage": "Гайд",
+        "linkToNextPage": "/articles",
+        "linkToPreviousPage": "/articles"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Виды"
+                briefImage="https://res.cloudinary.com/kineticlabs/image/upload/q_auto/c_fit,w_1000/f_auto/v1/api-images/blog/11-12-22-plate-mount-vs-pcb-mount-stabilizers/2-DSC07723_1_gw5a5e_eacuxg"
                 briefText={briefText}
                 pages={pages}
             >

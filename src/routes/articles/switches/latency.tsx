@@ -11,17 +11,17 @@ const SwitchLatency = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Гайд",
+        "previousPage": "Франкенсвитчи",
+        "linkToNextPage": "/articles",
+        "linkToPreviousPage": "/articles/switches/frankenswitches"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Задержки"
+                briefImage="https://www.rtings.com/assets/pages/KaZ4orph/8-bit-do-single-key-latency-medium.jpg"
                 briefText={briefText}
                 pages={pages}
             >

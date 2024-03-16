@@ -11,21 +11,21 @@ const SwitchMaterial = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Звук",
+        "previousPage": "Графики силы нажатия",
+        "linkToNextPage": "/articles/switches/sound",
+        "linkToPreviousPage": "/articles/switches/forceCurves"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Материалы"
+                briefImage="https://images.squarespace-cdn.com/content/v1/5e5af256556661723b861bd1/815364e9-0f1c-4c7c-99ff-4ef4e1253c10/topext.JPG"
                 briefText={briefText}
                 pages={pages}
             >
-            <MaterialPost />
+                <MaterialPost />
         </ArticleContent>
 </MobileNavbar>
 )
