@@ -24,5 +24,5 @@ body {
     overflow-x: hidden;
     background-color: light-dark(#ffffff, #090012);
     background-size: 400px;
-    background-image: light-dark(none, url("https://assets-global.website-files.com/639997ad49dddb11d0c0efba/639a05a5c0944b02ab3529dd_grid.svg"));
+    background-image: light-dark(url("https://svgshare.com/i/14Qm.svg"), url("https://assets-global.website-files.com/639997ad49dddb11d0c0efba/639a05a5c0944b02ab3529dd_grid.svg"));
 }
