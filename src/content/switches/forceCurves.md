@@ -1,22 +1,26 @@
 # Что такое графики силы нажатия ?
 
+Как мы знаем, свитч начинает свой ход лишь под воздействием силы нажатия, которая меняется по мере нажатия. Это изменение можно изобразить на графике с помощью кривой, где ось Y используют в качестве отображения силы нажатия, а ось X используют в качестве отображения расстояния смещения стема от начального положения. На изображении ниже можно увидеть, что я имею ввиду под смещением стема от начального положения.
+
 ![](https://i.imgur.com/3oFmnEP.png)
 
-Как мы знаем, свитч начинает свой ход лишь под воздействием силы нажатия, которая меняется. Это изменение можно изобразить на графике с помощью кривой, где ось Y используют в качестве отображения силы нажатия, а ось X используют в качестве отображения расстояния смещения стема от начального положения. На прикреплённом фото можно увидеть, что я имею ввиду под смещением стема от начального положения.
-
 Если попытаться сформулировать определение, то получается что-то такое: **force curve (кривая силы нажатия)** — это график, показывающий силу нажатия в определённой точке смещения стема от начального положения.
+
+Пример графика силы нажатия:
+
+![](https://i.imgur.com/fdRCzjo.jpg)
 
 # В чём смысл?
 
 Для начала посмотрим на некоторые обзоры/отзывы на свитчи.
 
-`- “Imo bobas are comically tactile while the baby kangaroos have that perfect amount of tactile and 'smoothness'. I've tried a lot of the 'god' non Frankenstein tactile switches and the BBK are my favorite out of all of them”`
+`“Imo bobas are comically tactile while the baby kangaroos have that perfect amount of tactile and 'smoothness'. I've tried a lot of the 'god' non Frankenstein tactile switches and the BBK are my favorite out of all of them”`
 
-`- “The sound and feel on Gazzew Boba U4T are better than I could have honestly imagined. I didn't think they would be this MUCH better than my current Kiwi's. After watching/reading reviews and comments about them, I had to give them a try. These Gazzew Boba U4T's did not let me down”`
+`“The sound and feel on Gazzew Boba U4T are better than I could have honestly imagined. I didn't think they would be this MUCH better than my current Kiwi's. After watching/reading reviews and comments about them, I had to give them a try. These Gazzew Boba U4T's did not let me down”`
 
-`- “Outemu Ice Purple has a strong middle bump and putting the Purple Stem in Boba housing is a nice Frankenswitch. The Boba is just a superior housing than the Ice in every way but share a similar tactile leaf”`
+`“Outemu Ice Purple has a strong middle bump and putting the Purple Stem in Boba housing is a nice Frankenswitch. The Boba is just a superior housing than the Ice in every way but share a similar tactile leaf”`
 
-`- “I have both Holy Yok Pandas and NK Blueberries. Let me tell you these blueberry switches are wayy more tactile than holy pandas”`
+`“I have both Holy Yok Pandas and NK Blueberries. Let me tell you these blueberry switches are wayy more tactile than holy pandas”`
 
 Поскольку у каждого человека свои собственные предпочтения в плане тактильных ощущений от свитча, то такие отзывы или обзоры не дают никакой нормальной информации о том, чего ожидать от свитча. Конечно, некоторые пишут не только о том, что свитчи ощущаются очень круто, а также могут отметить “strong middle bump” или “mushy at the bottom”. Таким образом реально можно больше узнать о том, чего ожидать от свитча, но даже такие описания могут разниться от одного человека к другому банально из-за того, что кто-то использовал ещё более тактильные свитчи, к примеру, Kailh Box Royal или NK Blueberries, поэтому для него “strong middle bump” в Outemu Ice Purple будет ощущаться как “light middle bump”.
 
@@ -27,6 +31,8 @@
 Как уже говорилось выше, force curve хорошо отображает кейфил свитча. Давайте рассмотрим графики на конкретных примерах:
 
 ## Cherry MX Brown.
+
+![](https://i.imgur.com/gJag5wm.jpg)
 
 Что мы видим на графике? Две оси, про которые было написано выше, и две кривые. Та, что с более насыщенным цветом, отображает нажатие на свитч. То есть и “читать” её надо слева-направо. Та, что с менее насыщенным цветом, отображает отпускание свитча. То есть и “читать” ее надо справа-налево. Длина проекции кривой вплоть до резкого повышения силы нажатия (отметил красной линией) означает расстояние всего тревела - около 4 мм в данном случае.
 
@@ -40,17 +46,25 @@
 
 ## Outemu Lemon V2
 
+![](https://i.imgur.com/Be3t7gv.jpg)
+
 По графику видно расстояние тревела, его значение около 3.2 мм. Также можно заметить бамп, как у черри браунов. Одним из отличий этих свитчей будет наличие демпфера, что явно видно на графике: боттом аут сильно отклонён. Так можно понять, что свитчи будут ощущаться мягкими на полном нажатии.
 
 ## Gazzew Boba U4
+
+![](https://i.imgur.com/DtGlcrD.jpg)
 
 Данный свитч имеет совершенно другую форму бампа, в отличие от черри брауна, напоминающую смесь формы букв P и D. Бамп довольно сильный и долгий. Боттом аут ощущается мягким из-за наличия демпфера, что видно на графике
 
 ## Alps Brown
 
+![](https://i.imgur.com/V9oTE1T.jpg)
+
 Форма бампа похожа на D, так как имеет округлую форму и выраженно ощущается на всём ходу свитча (то есть по графику продолговатая).
 
-С помощью force curv’а также можно узнать консистенси тактильности свитчей (то, насколько сильно экземпляры одного и того же свитча будут отличаться друг от друга в плане ощущений). Но сравнения экземпляров свитчей делают не все тестеры. К примеру, HaaTa и bluepylons измеряют кривую силу нажатия только у одного экземпляра. А такие, как [rtings.com](http://rtings.com) и [tomshardware.com](http://tomshardware.com), делают замеры нескольких экземпляров свитча. У ThereminGoat странная ситуация с тестами, обычно он проводит замеры только одного экземпляра свитча, но иногда тестирует несколько (примеры: Gateron Root Beer Float, Cherry MX Purple, Feker Emerald Cabbage).
+С помощью графиков также можно узнать консистенси тактильности свитчей (то, насколько сильно экземпляры одного и того же свитча будут отличаться друг от друга в плане ощущений). Но сравнения экземпляров свитчей делают не все тестеры. К примеру, HaaTa и bluepylons измеряют кривую силу нажатия только у одного экземпляра. А такие, как [rtings.com](http://rtings.com) и [tomshardware.com](http://tomshardware.com), делают замеры нескольких экземпляров свитча. У ThereminGoat странная ситуация с тестами, обычно он проводит замеры только одного экземпляра свитча, но иногда тестирует несколько (примеры: Gateron Root Beer Float, Cherry MX Purple, Feker Emerald Cabbage).
+
+![](https://i.imgur.com/xmtGgFM.jpg)
 
 Рассмотрим замеры экземпляров Topre с клавиатуры Topre Realforce 104UW. По графику можно увидеть довольно большой разброс в плане тактильности свитчей. Значит экземпляры топре не особо-то и тактильно консистентны. Тем не менее, бамп имеет почти одинаковую форму, поэтому различия в ощущениях будут не сильно заметными.
 
@@ -58,15 +72,17 @@
 
 # Есть ли отличия в графиках у линейных свитчей?
 
+в процессе написания
+
 # Где их можно найти?
 
-На сайте https://www.switchesdb.com/ есть графики для 1514 свитчей на момент написания этой статьи. Используются замеры от HaaTa, bluepylons и ThereminGoat. Добавляют их вручную, поэтому новые тесты от ThereminGoat появляются там с запозданием. Кроме того, нельзя посмотреть точку активации (actuation point) и точку сброса (reset point). Зато можно легко сравнить свитчи с помощью наложения графиков.
+На сайте [switchesdb.com](https://www.switchesdb.com) есть графики для 1514 свитчей на момент написания этой статьи. Используются замеры от HaaTa, bluepylons и ThereminGoat. Добавляют их вручную, поэтому новые тесты от ThereminGoat появляются там с запозданием. Кроме того, нельзя посмотреть точку активации (actuation point) и точку сброса (reset point). Зато можно легко сравнить свитчи с помощью наложения графиков.
 
-Если хочется увидеть последние тесты от ThereminGoat, то вам сюда: https://github.com/ThereminGoat/force-curves
+Если хочется увидеть последние тесты от ThereminGoat, то вам [сюда](https://github.com/ThereminGoat/force-curves).
 
-Тесты на 101 свитч от ртингс: https://www.rtings.com/keyboard-switch/reviews
+Тесты на 101 свитч от ртингс: [rtings.com](https://www.rtings.com/keyboard-switch/reviews)
 
-Что насчёт tomshardware, то на нём мало тестов свитчей с графиками и их перестали делать после 2018 года. Но тесты всё ещё можно найти в профиле у Seth Colaner: https://www.tomshardware.com/author/seth-colaner
+Что насчёт tomshardware, то на нём мало тестов свитчей с графиками и их перестали делать после 2018 года. Но тесты всё ещё можно найти в профиле у [Seth Colaner](https://www.tomshardware.com/author/seth-colaner).
 
 # Итоги
 

@@ -35,7 +35,9 @@ const ArticleContent = ({ title, briefImage, briefText, pages, children }: Artic
                     {styledBriefText}
                 </Box>
             </Container>
-            {children}
+            <Container size={1000}>
+                {children}
+            </Container>
             <NavigationButtons
                 nextPage={pages.nextPage}
                 previousPage={pages.previousPage}
