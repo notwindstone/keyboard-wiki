@@ -31,6 +31,7 @@
     left: 0;
     position: absolute;
     width: 60%;
+    max-height: 90%;
     border-radius: var(--mantine-radius-md);
 
     @media (max-width: $mantine-breakpoint-md) {
@@ -41,7 +42,7 @@
 .briefBox {
     position: absolute;
     color: #ffffff;
-    background: #090012;
+    background: #000000;
     right: 0;
     bottom: 0;
     width: 50%;

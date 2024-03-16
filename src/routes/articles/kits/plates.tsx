@@ -11,17 +11,17 @@ const KitsPlates = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Маунты",
+        "previousPage": "Гайд",
+        "linkToNextPage": "/articles/kits/mounts",
+        "linkToPreviousPage": "/articles"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Плейты"
+                briefImage="https://www.laserboost.com/wp-content/uploads/2021/01/Shiny-Brass-and-Custom-Logo.jpg"
                 briefText={briefText}
                 pages={pages}
             >

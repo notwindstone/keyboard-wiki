@@ -11,17 +11,17 @@ const KitsMounts = () => {
     ]
 
     const pages = {
-        "nextPage": "",
-        "previousPage": "",
-        "linkToNextPage": "/",
-        "linkToPreviousPage": "/"
+        "nextPage": "Гайд",
+        "previousPage": "Плейты",
+        "linkToNextPage": "/articles",
+        "linkToPreviousPage": "/articles/kits/plates"
     }
 
     return (
         <MobileNavbar>
             <ArticleContent
-                title=""
-                briefImage=""
+                title="Маунты"
+                briefImage="https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879206490-Q72QLPROEJR89GVTPXTB/SP-111_e-white.png"
                 briefText={briefText}
                 pages={pages}
             >
