@@ -1,20 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {createRouter, RouterProvider} from "@tanstack/react-router";
-import { routeTree } from "./routeTree.gen.ts";
 import '@mantine/core/styles.css';
+import './index.css'
 import { createTheme, MantineProvider } from '@mantine/core';
-import './styles/index.css'
-import './styles/Header.css'
-import './styles/Sidebar.css'
-import './styles/Main.css'
-import './styles/Resources.css'
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { routeTree } from "./routeTree.gen.ts";
 
 const theme = createTheme({
-    /** Put your mantine theme override here */
-    fontFamily: 'Montserrat, sans-serif',
+    fontFamily: 'Inter',
     defaultRadius: 'md'
 });
+
 
 const router = createRouter({ routeTree })
 

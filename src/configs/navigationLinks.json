@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Главная",
+    "link": "/",
+    "navbarLink": "/"
+  },
+  {
+    "title": "Гайд",
+    "link": "/articles",
+    "navbarLink": "/articles"
+  }
+]

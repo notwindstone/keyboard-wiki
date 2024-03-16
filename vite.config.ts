@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin'
-// https://vitejs.dev/config/
+import mdx from '@mdx-js/rollup'
+
 export default defineConfig({
-  plugins: [react(), TanStackRouterVite()],
+    plugins: [
+        mdx(),
+        react(),
+        TanStackRouterVite(),
+    ],
 })

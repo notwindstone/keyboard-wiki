@@ -1,0 +1,38 @@
+.button {
+    background: light-dark(#ffffff, #090012);
+    flex: 1;
+    height: fit-content;
+    min-width: fit-content;
+    border: 1px solid light-dark(var(--mantine-color-violet-light-hover), #160426);
+    transition: 0.3s ease;
+
+    &:hover {
+        border: 1px solid var(--mantine-color-violet-9);
+    }
+}
+
+.buttonContent {
+    font-weight: 400;
+}
+
+.buttonTitleNext {
+    font-size: var(--mantine-font-size-md);
+    text-align: left;
+}
+
+.buttonTitlePrevious {
+    font-size: var(--mantine-font-size-md);
+    text-align: right;
+}
+
+.buttonDescriptionNext {
+    font-size: var(--mantine-font-size-xs);
+    color: var(--mantine-color-dimmed);
+    text-align: left;
+}
+
+.buttonDescriptionPrevious {
+    font-size: var(--mantine-font-size-xs);
+    color: var(--mantine-color-dimmed);
+    text-align: right;
+}

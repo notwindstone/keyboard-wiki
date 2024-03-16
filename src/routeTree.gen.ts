@@ -11,54 +11,141 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as ResourcesImport } from './routes/resources'
 import { Route as IndexImport } from './routes/index'
-import { Route as GuideIndexImport } from './routes/guide/index'
-import { Route as GuideSwitchesImport } from './routes/guide/switches'
-import { Route as GuideStabilizersImport } from './routes/guide/stabilizers'
-import { Route as GuideKitsImport } from './routes/guide/kits'
-import { Route as GuideKeycapsImport } from './routes/guide/keycaps'
-import { Route as GuideIntroImport } from './routes/guide/intro'
+import { Route as ArticlesIndexImport } from './routes/articles/index'
+import { Route as ArticlesSwitchesIndexImport } from './routes/articles/switches/index'
+import { Route as ArticlesStabilizersIndexImport } from './routes/articles/stabilizers/index'
+import { Route as ArticlesKitsIndexImport } from './routes/articles/kits/index'
+import { Route as ArticlesKeycapsIndexImport } from './routes/articles/keycaps/index'
+import { Route as ArticlesIntroIndexImport } from './routes/articles/intro/index'
+import { Route as ArticlesSwitchesTypesImport } from './routes/articles/switches/types'
+import { Route as ArticlesSwitchesSoundImport } from './routes/articles/switches/sound'
+import { Route as ArticlesSwitchesModificationsImport } from './routes/articles/switches/modifications'
+import { Route as ArticlesSwitchesMaterialImport } from './routes/articles/switches/material'
+import { Route as ArticlesSwitchesLatencyImport } from './routes/articles/switches/latency'
+import { Route as ArticlesSwitchesFrankenswitchesImport } from './routes/articles/switches/frankenswitches'
+import { Route as ArticlesSwitchesForceCurvesImport } from './routes/articles/switches/forceCurves'
+import { Route as ArticlesSwitchesAnatomyImport } from './routes/articles/switches/anatomy'
+import { Route as ArticlesStabilizersTypesImport } from './routes/articles/stabilizers/types'
+import { Route as ArticlesKitsPlatesImport } from './routes/articles/kits/plates'
+import { Route as ArticlesKitsMountsImport } from './routes/articles/kits/mounts'
+import { Route as ArticlesKeycapsProfilesImport } from './routes/articles/keycaps/profiles'
+import { Route as ArticlesKeycapsMaterialImport } from './routes/articles/keycaps/material'
+import { Route as ArticlesIntroSizesImport } from './routes/articles/intro/sizes'
+import { Route as ArticlesIntroLayoutsImport } from './routes/articles/intro/layouts'
 
 // Create/Update Routes
-
-const ResourcesRoute = ResourcesImport.update({
-  path: '/resources',
-  getParentRoute: () => rootRoute,
-} as any)
 
 const IndexRoute = IndexImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideIndexRoute = GuideIndexImport.update({
-  path: '/guide/',
+const ArticlesIndexRoute = ArticlesIndexImport.update({
+  path: '/articles/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideSwitchesRoute = GuideSwitchesImport.update({
-  path: '/guide/switches',
+const ArticlesSwitchesIndexRoute = ArticlesSwitchesIndexImport.update({
+  path: '/articles/switches/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideStabilizersRoute = GuideStabilizersImport.update({
-  path: '/guide/stabilizers',
+const ArticlesStabilizersIndexRoute = ArticlesStabilizersIndexImport.update({
+  path: '/articles/stabilizers/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideKitsRoute = GuideKitsImport.update({
-  path: '/guide/kits',
+const ArticlesKitsIndexRoute = ArticlesKitsIndexImport.update({
+  path: '/articles/kits/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideKeycapsRoute = GuideKeycapsImport.update({
-  path: '/guide/keycaps',
+const ArticlesKeycapsIndexRoute = ArticlesKeycapsIndexImport.update({
+  path: '/articles/keycaps/',
   getParentRoute: () => rootRoute,
 } as any)
 
-const GuideIntroRoute = GuideIntroImport.update({
-  path: '/guide/intro',
+const ArticlesIntroIndexRoute = ArticlesIntroIndexImport.update({
+  path: '/articles/intro/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesTypesRoute = ArticlesSwitchesTypesImport.update({
+  path: '/articles/switches/types',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesSoundRoute = ArticlesSwitchesSoundImport.update({
+  path: '/articles/switches/sound',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesModificationsRoute =
+  ArticlesSwitchesModificationsImport.update({
+    path: '/articles/switches/modifications',
+    getParentRoute: () => rootRoute,
+  } as any)
+
+const ArticlesSwitchesMaterialRoute = ArticlesSwitchesMaterialImport.update({
+  path: '/articles/switches/material',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesLatencyRoute = ArticlesSwitchesLatencyImport.update({
+  path: '/articles/switches/latency',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesSwitchesFrankenswitchesRoute =
+  ArticlesSwitchesFrankenswitchesImport.update({
+    path: '/articles/switches/frankenswitches',
+    getParentRoute: () => rootRoute,
+  } as any)
+
+const ArticlesSwitchesForceCurvesRoute =
+  ArticlesSwitchesForceCurvesImport.update({
+    path: '/articles/switches/forceCurves',
+    getParentRoute: () => rootRoute,
+  } as any)
+
+const ArticlesSwitchesAnatomyRoute = ArticlesSwitchesAnatomyImport.update({
+  path: '/articles/switches/anatomy',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesStabilizersTypesRoute = ArticlesStabilizersTypesImport.update({
+  path: '/articles/stabilizers/types',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesKitsPlatesRoute = ArticlesKitsPlatesImport.update({
+  path: '/articles/kits/plates',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesKitsMountsRoute = ArticlesKitsMountsImport.update({
+  path: '/articles/kits/mounts',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesKeycapsProfilesRoute = ArticlesKeycapsProfilesImport.update({
+  path: '/articles/keycaps/profiles',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesKeycapsMaterialRoute = ArticlesKeycapsMaterialImport.update({
+  path: '/articles/keycaps/material',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesIntroSizesRoute = ArticlesIntroSizesImport.update({
+  path: '/articles/intro/sizes',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ArticlesIntroLayoutsRoute = ArticlesIntroLayoutsImport.update({
+  path: '/articles/intro/layouts',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -70,32 +157,88 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/resources': {
-      preLoaderRoute: typeof ResourcesImport
+    '/articles/': {
+      preLoaderRoute: typeof ArticlesIndexImport
       parentRoute: typeof rootRoute
     }
-    '/guide/intro': {
-      preLoaderRoute: typeof GuideIntroImport
+    '/articles/intro/layouts': {
+      preLoaderRoute: typeof ArticlesIntroLayoutsImport
       parentRoute: typeof rootRoute
     }
-    '/guide/keycaps': {
-      preLoaderRoute: typeof GuideKeycapsImport
+    '/articles/intro/sizes': {
+      preLoaderRoute: typeof ArticlesIntroSizesImport
       parentRoute: typeof rootRoute
     }
-    '/guide/kits': {
-      preLoaderRoute: typeof GuideKitsImport
+    '/articles/keycaps/material': {
+      preLoaderRoute: typeof ArticlesKeycapsMaterialImport
       parentRoute: typeof rootRoute
     }
-    '/guide/stabilizers': {
-      preLoaderRoute: typeof GuideStabilizersImport
+    '/articles/keycaps/profiles': {
+      preLoaderRoute: typeof ArticlesKeycapsProfilesImport
       parentRoute: typeof rootRoute
     }
-    '/guide/switches': {
-      preLoaderRoute: typeof GuideSwitchesImport
+    '/articles/kits/mounts': {
+      preLoaderRoute: typeof ArticlesKitsMountsImport
       parentRoute: typeof rootRoute
     }
-    '/guide/': {
-      preLoaderRoute: typeof GuideIndexImport
+    '/articles/kits/plates': {
+      preLoaderRoute: typeof ArticlesKitsPlatesImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/stabilizers/types': {
+      preLoaderRoute: typeof ArticlesStabilizersTypesImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/anatomy': {
+      preLoaderRoute: typeof ArticlesSwitchesAnatomyImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/forceCurves': {
+      preLoaderRoute: typeof ArticlesSwitchesForceCurvesImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/frankenswitches': {
+      preLoaderRoute: typeof ArticlesSwitchesFrankenswitchesImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/latency': {
+      preLoaderRoute: typeof ArticlesSwitchesLatencyImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/material': {
+      preLoaderRoute: typeof ArticlesSwitchesMaterialImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/modifications': {
+      preLoaderRoute: typeof ArticlesSwitchesModificationsImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/sound': {
+      preLoaderRoute: typeof ArticlesSwitchesSoundImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/types': {
+      preLoaderRoute: typeof ArticlesSwitchesTypesImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/intro/': {
+      preLoaderRoute: typeof ArticlesIntroIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/keycaps/': {
+      preLoaderRoute: typeof ArticlesKeycapsIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/kits/': {
+      preLoaderRoute: typeof ArticlesKitsIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/stabilizers/': {
+      preLoaderRoute: typeof ArticlesStabilizersIndexImport
+      parentRoute: typeof rootRoute
+    }
+    '/articles/switches/': {
+      preLoaderRoute: typeof ArticlesSwitchesIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -105,13 +248,27 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren([
   IndexRoute,
-  ResourcesRoute,
-  GuideIntroRoute,
-  GuideKeycapsRoute,
-  GuideKitsRoute,
-  GuideStabilizersRoute,
-  GuideSwitchesRoute,
-  GuideIndexRoute,
+  ArticlesIndexRoute,
+  ArticlesIntroLayoutsRoute,
+  ArticlesIntroSizesRoute,
+  ArticlesKeycapsMaterialRoute,
+  ArticlesKeycapsProfilesRoute,
+  ArticlesKitsMountsRoute,
+  ArticlesKitsPlatesRoute,
+  ArticlesStabilizersTypesRoute,
+  ArticlesSwitchesAnatomyRoute,
+  ArticlesSwitchesForceCurvesRoute,
+  ArticlesSwitchesFrankenswitchesRoute,
+  ArticlesSwitchesLatencyRoute,
+  ArticlesSwitchesMaterialRoute,
+  ArticlesSwitchesModificationsRoute,
+  ArticlesSwitchesSoundRoute,
+  ArticlesSwitchesTypesRoute,
+  ArticlesIntroIndexRoute,
+  ArticlesKeycapsIndexRoute,
+  ArticlesKitsIndexRoute,
+  ArticlesStabilizersIndexRoute,
+  ArticlesSwitchesIndexRoute,
 ])
 
 /* prettier-ignore-end */
