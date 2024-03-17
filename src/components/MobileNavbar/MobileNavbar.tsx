@@ -1,4 +1,4 @@
-import {AppShell, Burger, Group, ThemeIcon, Title, UnstyledButton} from '@mantine/core';
+import {AppShell, Burger, Grid, Group, ThemeIcon, Title, UnstyledButton} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconKeyboard } from '@tabler/icons-react';
 import classes from './MobileNavbar.module.css';
@@ -28,20 +28,30 @@ const MobileNavbar = ({ children }: any) => {
         >
             <AppShell.Header className={classes.header}>
                 <Group h="100%" px="md" className={classes.header}>
-                    <Group justify="space-between" style={{ flex: 1 }}>
-                        <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="md" />
-                        <Group gap={0} visibleFrom="md">
-                            <UnstyledButton component={Link} to="/" className={classes.control}>Главная</UnstyledButton>
-                            <UnstyledButton component={Link} to="/articles" className={classes.control}>Гайд</UnstyledButton>
-                        </Group>
-                        <Group className={classes.titleBar}>
-                            <ThemeIcon variant="gradient" gradient={{ from: 'violet', to: 'grape' }} size="lg">
-                                <IconKeyboard size={30} stroke={1.5} />
-                            </ThemeIcon>
-                            <Title className={classes.title}>HolyBoards</Title>
-                        </Group>
-                        <ThemeChanger />
-                    </Group>
+                    <Grid
+                        align="center"
+                        justify="space-between"
+                        style={{ width: '100%' }}
+                    >
+                        <Grid.Col span={{ base: 1.5, md: 4 }} style={{ display: 'flex', justifyContent: 'flex-start' }}>
+                            <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="md" />
+                            <Group gap={0} visibleFrom="md">
+                                <UnstyledButton component={Link} to="/" className={classes.control}>Главная</UnstyledButton>
+                                <UnstyledButton component={Link} to="/articles" className={classes.control}>Гайд</UnstyledButton>
+                            </Group>
+                        </Grid.Col>
+                        <Grid.Col span={{ base: 9, md: 4 }} style={{ display: 'flex', justifyContent: 'center' }}>
+                            <Group className={classes.titleBar}>
+                                <ThemeIcon variant="gradient" gradient={{ from: 'violet', to: 'grape' }} size="lg">
+                                    <IconKeyboard size={30} stroke={1.5} />
+                                </ThemeIcon>
+                                <Title className={classes.title}>HolyBoards</Title>
+                            </Group>
+                        </Grid.Col>
+                        <Grid.Col span={{ base: 1.5, md: 4 }} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                            <ThemeChanger />
+                        </Grid.Col>
+                    </Grid>
                 </Group>
             </AppShell.Header>
 

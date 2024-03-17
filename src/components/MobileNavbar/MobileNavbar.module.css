@@ -37,13 +37,15 @@
 }
 
 .titleBar {
-    transform: translateX(-50%);
-
-    @media (max-width: $mantine-breakpoint-md) {
-        transform: translateX(0);
+    @media (max-width: rem(320px)) {
+        display: none;
     }
 }
 
 .title {
     font-family: var(--mantine-font-family-monospace);
+
+    @media (max-width: rem(384px)) {
+        font-size: rem(24px);
+    }
 }
