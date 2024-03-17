@@ -37,7 +37,7 @@ const MobileNavbar = ({ children }: any) => {
                             <Burger opened={opened} onClick={toggle} hiddenFrom="md" size="md" />
                             <Group gap={0} visibleFrom="md">
                                 <UnstyledButton component={Link} to="/" className={classes.control}>Главная</UnstyledButton>
-                                <UnstyledButton component={Link} to="/articles" className={classes.control}>Гайд</UnstyledButton>
+                                <UnstyledButton component={Link} to="/articles" className={classes.control}>Вики</UnstyledButton>
                             </Group>
                         </Grid.Col>
                         <Grid.Col span={{ base: 9, md: 4 }} style={{ display: 'flex', justifyContent: 'center' }}>

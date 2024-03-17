@@ -39,17 +39,17 @@ const LinksGroup = ({ title, navbarLink, initiallyOpened, content }: LinksGroupP
                 <IconHome />
             )
             break
-        case "Гайд":
+        case "Вики":
             icon = (
                 <IconBook2 />
             )
             break
-        case "Основы":
+        case "Введение":
             icon = (
                 <IconDirections />
             )
             break
-        case "Базы для клавиатур":
+        case "Базы":
             icon = (
                 <IconKeyboard />
             )

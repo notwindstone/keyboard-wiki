@@ -8,7 +8,7 @@ const HeroBullets = () => {
                 <Group className={classes.group}>
                     <Title className={classes.title}>
                         <Text component="span" variant="gradient" gradient={{ from: 'violet', to: 'grape' }} inherit>
-                            Гайд
+                            Вики
                         </Text>{' '}
                         по механическим клавиатурам
                     </Title>
