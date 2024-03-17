@@ -19,7 +19,7 @@ interface ArticleContentProps {
 const ArticleContent = ({ title, briefImage, briefText, pages, children }: ArticleContentProps) => {
     const styledBriefText = briefText.map((item: string) => {
         return (
-            <Text size="lg" pt="xs">{item}</Text>
+            <Text className={classes.briefText} size="lg" pt="xs">{item}</Text>
         )
     })
 
