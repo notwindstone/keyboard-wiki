@@ -21,7 +21,7 @@ declare module '@tanstack/react-router' {
 }
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-    <MantineProvider theme={theme}>
+    <MantineProvider defaultColorScheme={"dark"} theme={theme}>
         <React.StrictMode>
             <RouterProvider router={router} />
         </React.StrictMode>
