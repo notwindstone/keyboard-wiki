@@ -4,14 +4,15 @@ import classes from './ContentCard.module.css';
 import {Link} from "@tanstack/react-router";
 
 interface ContentCardProps {
-    title: string;
-    imageURL: string;
-    imageAlt: string;
-    link: string;
-    content?: { title: string; link: string }[];
+    title: string,
+    imageURL: string,
+    imageAlt: string,
+    link: string,
+    category?: string,
+    content?: { title: string; link: string }[],
 }
 
-const ContentCard = ({ title, imageURL, imageAlt, link, content }: ContentCardProps) => {
+const ContentCard = ({ title, imageURL, imageAlt, link, category, content }: ContentCardProps) => {
     const newContent = content ?? []
     const cardContent = newContent.map((section, index, array) => {
         if (index + 1 === array.length) {
@@ -41,7 +42,7 @@ const ContentCard = ({ title, imageURL, imageAlt, link, content }: ContentCardPr
                 <Image className={classes.image} src={imageURL} alt={imageAlt} />
             </AspectRatio>
             <Text c="dimmed" size="sm" tt="uppercase" fw={700} mt="md">
-                {cardContent}
+                {cardContent.length > 0 ? cardContent : category}
             </Text>
             <Title order={2} className={title} mt={5}>
                 {title}

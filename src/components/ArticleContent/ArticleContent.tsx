@@ -13,7 +13,7 @@ interface ArticleContentProps {
         linkToNextPage: string,
         linkToPreviousPage: string,
     },
-    children: ReactNode
+    children: ReactNode,
 }
 
 const ArticleContent = ({ title, briefImage, briefText, pages, children }: ArticleContentProps) => {

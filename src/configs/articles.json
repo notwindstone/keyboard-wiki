@@ -9,13 +9,15 @@
         "title": "Размеры",
         "imageURL": "https://prototypist.net/cdn/shop/products/QQ_20230224172533_9eabe43a-5f67-4e90-afa1-2754f3a10613_1445x.jpg?v=1677252654",
         "imageAlt": "Meletrix Zoom75, 75 percent keyboard",
-        "link": "/articles/intro/sizes"
+        "link": "/articles/intro/sizes",
+        "category": "Введение"
       },
       {
         "title": "Раскладки",
         "imageURL": "https://www.pcworld.com/wp-content/uploads/2023/04/keychronq8alicekeyboardcustommechanicalkeyboardqmkvia8-1658304800042.jpg?quality=50&strip=all",
         "imageAlt": "Alice layout",
-        "link": "/articles/intro/layouts"
+        "link": "/articles/intro/layouts",
+        "category": "Введение"
       }
     ]
   },
@@ -29,13 +31,15 @@
         "title": "Плейты",
         "imageURL": "https://images.squarespace-cdn.com/content/v1/6116b9604a8e6b639a58a447/1628879206539-Q8BU1BX5PLA2DJJO9OWN/candybar-keyboard_plates.png",
         "imageAlt": "Different plates",
-        "link": "/articles/kits/plates"
+        "link": "/articles/kits/plates",
+        "category": "Базы"
       },
       {
         "title": "Маунты",
         "imageURL": "https://media.karousell.com/media/photos/products/2021/7/21/gasket_mount_60_custom_mechani_1626858962_dbd70787.jpg",
         "imageAlt": "Gasket mount",
-        "link": "/articles/kits/mounts"
+        "link": "/articles/kits/mounts",
+        "category": "Базы"
       }
     ]
   },
@@ -49,49 +53,57 @@
         "title": "Виды",
         "imageURL": "https://hippokeys.com/cdn/shop/products/image_568f65b1-f4e5-4e40-905c-4149b1a52823.jpg?v=1655690788&width=4032",
         "imageAlt": "Random switches",
-        "link": "/articles/switches/types"
+        "link": "/articles/switches/types",
+        "category": "Свитчи"
       },
       {
         "title": "Анатомия",
         "imageURL": "https://i.redd.it/8veqm2cv85l51.jpg",
         "imageAlt": "Glorious Panda switch disassemble",
-        "link": "/articles/switches/anatomy"
+        "link": "/articles/switches/anatomy",
+        "category": "Свитчи"
       },
       {
         "title": "Графики силы нажатия",
         "imageURL": "https://chart-studio.plotly.com/~haata/508/novelkeys-box-royal.png",
         "imageAlt": "NovelKeys Box Royal switch force curve",
-        "link": "/articles/switches/forceCurves"
+        "link": "/articles/switches/forceCurves",
+        "category": "Свитчи"
       },
       {
         "title": "Материалы",
         "imageURL": "https://preview.redd.it/qp5p6yc3n4c91.png?width=1600&format=png&auto=webp&s=f75f49cfeb2e5acb14bfd848bdea88d0376af9cc",
         "imageAlt": "Different switch material",
-        "link": "/articles/switches/material"
+        "link": "/articles/switches/material",
+        "category": "Свитчи"
       },
       {
         "title": "Звук",
         "imageURL": "https://www.rtings.com/assets/pages/zgjmVXMV/smoothness-audio-analysis-large.jpg",
         "imageAlt": "Switch sound analysis",
-        "link": "/articles/switches/sound"
+        "link": "/articles/switches/sound",
+        "category": "Свитчи"
       },
       {
         "title": "Модификация",
         "imageURL": "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/213300113/original/f178cc7fe3f78953dfec0060e250ebee9cd978f2/lube-your-mechanical-switches.png",
         "imageAlt": "Krytox 205g0 lube",
-        "link": "/articles/switches/modifications"
+        "link": "/articles/switches/modifications",
+        "category": "Свитчи"
       },
       {
         "title": "Франкенсвитчи",
         "imageURL": "https://マリウス.com/frankenswitch-the-poor-mans-soju-switch/images/IMG_2002_hue37e301dbed72e3f2a412390492cb38b_5983363_1440x0_resize_q75_box.jpg",
         "imageAlt": "Poor-Man's Soju frankenswitch",
-        "link": "/articles/switches/frankenswitches"
+        "link": "/articles/switches/frankenswitches",
+        "category": "Свитчи"
       },
       {
         "title": "Задержки",
         "imageURL": "https://www.rtings.com/assets/pages/zgjmVXMV/latency-scope-press-large.jpg",
         "imageAlt": "Switch latency measurement",
-        "link": "/articles/switches/latency"
+        "link": "/articles/switches/latency",
+        "category": "Свитчи"
       }
     ]
   },
@@ -105,13 +117,15 @@
         "title": "Профили",
         "imageURL": "https://switchandclick.com/wp-content/uploads/2021/02/IMG_7752-1024x683-2-2.jpg",
         "imageAlt": "Different keycaps profiles",
-        "link": "/articles/keycaps/profiles"
+        "link": "/articles/keycaps/profiles",
+        "category": "Кейкапы"
       },
       {
         "title": "Материалы",
         "imageURL": "https://cdn.shopify.com/s/files/1/0634/3370/3645/files/pomj_blog_content.jpg?v=1676493863",
         "imageAlt": "POM keycaps I believe",
-        "link": "/articles/keycaps/material"
+        "link": "/articles/keycaps/material",
+        "category": "Кейкапы"
       }
     ]
   },
@@ -125,7 +139,8 @@
         "title": "Виды",
         "imageURL": "https://res.cloudinary.com/kineticlabs/image/upload/q_auto/c_fit,w_800/f_auto/v1/api-images/products/gateron-ink-v2-stabilizers-screw-in/DSC06638_h6aqyp",
         "imageAlt": "Gateron Ink V2 screw-in pcb mount stabilizers",
-        "link": "/articles/stabilizers/types"
+        "link": "/articles/stabilizers/types",
+        "category": "Стабилизаторы"
       }
     ]
   }

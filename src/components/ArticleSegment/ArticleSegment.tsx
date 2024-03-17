@@ -3,18 +3,19 @@ import ContentCard from "../ContentCard/ContentCard.tsx";
 
 interface ArticleSegmentProps {
     articles?: {
-        title:    string;
-        imageURL: string;
-        imageAlt: string;
-        link:     string;
+        title: string,
+        imageURL: string,
+        imageAlt: string,
+        link: string,
         content?: {
-            title: string;
-            imageURL: string;
-            imageAlt: string;
-            link: string;
-        }[]
+            title: string,
+            imageURL: string,
+            imageAlt: string,
+            link: string,
+            category?: string,
+        }[],
     }[],
-    style?: CSSProperties
+    style?: CSSProperties,
 }
 
 const ArticleSegment = ({ articles, style }: ArticleSegmentProps) => {
