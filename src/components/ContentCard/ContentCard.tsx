@@ -26,7 +26,14 @@ const ContentCard = ({ title, imageURL, imageAlt, link, content }: ContentCardPr
     })
 
     return (
-        <Card key={title} p="xl" radius="md" component={Link} to={link} className={classes.card}>
+        <Card
+            key={title}
+            p="xl"
+            radius="md"
+            component={Link}
+            to={link}
+            className={classes.card}
+        >
             <ThemeIcon size="xl" variant="default" className={classes.icon}>
                 <IconExternalLink />
             </ThemeIcon>
