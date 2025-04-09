@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+## Preview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/user-attachments/assets/8404ab9b-db7f-4113-9a54-cf498cf5134f)
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/0c0d495a-1f03-482c-b510-f2dd1b306b03)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
 
-## Expanding the ESLint configuration
+- Vite
+- React
+- TypeScript
+- Mantine UI
+- Tanstack Router
+- MDX
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requirements
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js
+- Any node.js-compatible package manager (I will use [bun.sh](https://bun.sh/))
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Running locally
+
+Install dependencies:
+
+```bash
+bun install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Now you can run the development server:
+
+```bash
+bun dev
+```
+
+To run this app in production mode you need to build it first:
+
+```bash
+bun run build
+```
+
+Now you can either preview it:
+
+```bash
+bun run preview
+```
+
+Or deploy it to a hosting.
+
+## Deploying
+
+Refer to [Deploying a Static Site](https://vite.dev/guide/static-deploy.html#deploying-a-static-site)
